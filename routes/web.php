@@ -28,6 +28,9 @@ Route::prefix('')->group(function () {
         return view('users.dashboard',['questions' => $question]);
     });
     Route::post('/hasil', [QuestionController::class, 'calculate']);
+    Route::get('/hasil2', function(){
+        return view('mbti.hasil');
+    });
 });
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/', function () {

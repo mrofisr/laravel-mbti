@@ -37,6 +37,8 @@
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#panduan">Panduan</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#mbti">Apa itu MBTI</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#about">Tentang Kita</a>
                 @if (Auth::check())
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -64,7 +66,20 @@
         </div>
         <div class="hidden lg:block lg:w-1/2">
             <img src="{{ asset('images/undraw_ideas_s70l.png') }}"
-                x-transition:enter="transition ease-out duration-150">
+                x-transition:enter="transition duration-500 ease-in-out">
+        </div>
+    </div>
+    <div class="min-h-screen flex justify-center items-center" id="mbti">
+        <div class="container mx-auto p-10">
+            <h1 class="text-4xl font-bold from-current mb-8">Apa itu MBTI Test?</h1>
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-10 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        <p class="text-2xl font-semibold">MBTI adalah tes kepribadian dengan serangkaian pertanyaan tentang preferensi seseorang pada empat domain yang berbeda.</p>
+                        <p class="italic mt-2">sumber : <a href="https://akupintar.id/info-pintar/-/blogs/tes-mbti-16-tipe-kepribadian-klasifikasi-dan-penjelasannya" target="_blank" rel="noopener noreferrer">https://akupintar.id/</a></p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <div class="min-h-screen flex justify-center items-center" id="panduan">
@@ -73,11 +88,25 @@
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-wrap -m-4">
-                        <div class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">1. Isilah setiap pertanyaan sesuai kepribadianmu dengan jujur. Karena setiap jawaban dapat diterima dan tidak ada jawaban yang salah. </div>
-                        <div class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">2. Jawablah dengan santai karena  tes kepribadian ini tidak dibatasi waktu. </div>
-                        <div class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">3. Kerjakan tes kepribadian ini ditempat yang nyaman dan kondusif agar kamu dapat menjawab setiap pertanyaan dengan fokus</div>
-                        <div class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">4. Apabila kamu berhenti di tengah-tengah tes, maka jawaban selama proses tes akan hilang. </div>
-                        <div class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">5. Setelah kamu selesai mengisi semua pertanyaan, kamu dapat mengetahui hasil tes kepribadian ini .</div>
+                        <div
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            1. Isilah setiap pertanyaan sesuai kepribadianmu dengan jujur. Karena setiap jawaban dapat
+                            diterima dan tidak ada jawaban yang salah. </div>
+                        <div
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            2. Jawablah dengan santai karena tes kepribadian ini tidak dibatasi waktu. </div>
+                        <div
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            3. Kerjakan tes kepribadian ini ditempat yang nyaman dan kondusif agar kamu dapat menjawab
+                            setiap pertanyaan dengan fokus</div>
+                        <div
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            4. Apabila kamu berhenti di tengah-tengah tes, maka jawaban selama proses tes akan hilang.
+                        </div>
+                        <div
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            5. Setelah kamu selesai mengisi semua pertanyaan, kamu dapat mengetahui hasil tes
+                            kepribadian ini .</div>
                     </div>
                 </div>
             </section>
@@ -123,7 +152,7 @@
 
                                 <h2
                                     class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">
-                                    System Analyst</h2>
+                                    Sistem Analis</h2>
 
                                 <p class="mt-2 text-gray-600 dark:text-gray-200">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio
@@ -146,7 +175,7 @@
 
                                 <h2
                                     class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">
-                                    Documenter</h2>
+                                    Dokumenter</h2>
 
                                 <p class="mt-2 text-gray-600 dark:text-gray-200">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio

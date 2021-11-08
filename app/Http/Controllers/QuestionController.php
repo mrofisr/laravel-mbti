@@ -65,6 +65,14 @@ class QuestionController extends Controller
             return view('mbti.'.$hasil.'', [
                 'nama' => $nama,
                 'hasil' => $hasil,
+                'P' => $P,
+                'I' => $I,
+                'J' => $J,
+                'T' => $T,
+                'E' => $E,
+                'N' => $N,
+                'S' => $S,
+                'F' => $F
             ]);
         }
     }
