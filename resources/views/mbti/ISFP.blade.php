@@ -84,14 +84,14 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italic text-justify my-3">
             <blockquote>Seniman yang fleksibel dan mengagumkan, selalu siap menjelajahi dan mengalami hal baru. Berpikiran praktis, menghindari konflik, cenderung tidak mau memimpin, santai.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> : Seniman, Desainer, Pekerja Sosial, Psikolog, Guru, Aktor</p>
         <p class="text-indigo-900"><b>Partner</b> : ESFJ atau ENFJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Marilyn Monroe, Barbara Streisand, Paul McCartney, Wolfgang Amadeus Mozart</p>
         <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-2/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
-        <div class="text-right text-indigo-900 mt-20">
+        <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>
             <p>NIM : 1908096002</p>

@@ -84,14 +84,14 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italic text-justify my-3">
             <blockquote>Orang yang puitis, baik hati dan altruisik, selalu ingin membantu aksi kebaikan. Perhatian dan peka, antusias dan setia, idealis dan perfeksionis, setia kepada prinsip yang digenggam.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> :  Penulis, Sastrawan, Konselor, Psikolog, Pengajar, Seniman, Pemuka Agama</p>
         <p class="text-indigo-900"><b>Partner</b> : ENFJ atau ESFJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Audrey Hepburn, J. R. R. Tolkien, Putri Diana, William Shakespeare</p>
         <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
-        <div class="text-right text-indigo-900 mt-20">
+        <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>
             <p>NIM : 1908096002</p>

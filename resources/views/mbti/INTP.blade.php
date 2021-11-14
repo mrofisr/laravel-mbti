@@ -84,14 +84,14 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italics text-justify my-3">
             <blockquote>Menghargai intelektualitas dan pengetahuan, lebih suka bekerja sendiri, kritis, skeptis, mudah curiga dan pesimis, tidak suka memimpin, dan memiliki minat yang jelas.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> :  Penulis Buku Teknis, Ahli Forensik, Jaksa, Pengacara, Teknisi</p>
         <p class="text-indigo-900"><b>Partner</b> : ENTJ atau ESTJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Albert Einstein, Charles Darwin, Socrates, J.K. Rowling, C.G. Jung, Sir Isaac Newton</p>
         <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
-        <div class="text-right text-indigo-900 mt-20">
+        <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>
             <p>NIM : 1908096002</p>

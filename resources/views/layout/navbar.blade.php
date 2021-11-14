@@ -9,8 +9,11 @@
                     clip-rule="evenodd"></path>
             </svg>
         </button>
+        <div class="flex justify-center flex-1 lg:mr-32">
+            <div class="relative w-full max-w-xl mr-6 ">
+            </div>
+        </div>
         <ul class="flex items-center flex-shrink-0 space-x-6">
-            <!-- Profile menu -->
             <li class="relative">
                 <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
                     @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"

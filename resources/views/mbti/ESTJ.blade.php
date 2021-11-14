@@ -84,14 +84,14 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italic text-justify my-3">
             <blockquote>Administrator istimewa, tidak ada duanya dalam mengelola sesuatu atau orang. Praktis, sistematis, disiplin, dan cenderung kaku.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> :  Militer, Manajer, Polisi, Hakim, Pengacara, Guru, Sales, Auditor, Akuntan</p>
         <p class="text-indigo-900"><b>Partner</b> : ISTP atau INTP</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : George W. Bush, Alec Baldwin</p>
         <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-2/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
-        <div class="text-right text-indigo-900 mt-20">
+        <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>
             <p>NIM : 1908096002</p>

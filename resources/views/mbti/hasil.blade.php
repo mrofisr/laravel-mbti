@@ -84,7 +84,7 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italic text-justify my-3">
             <blockquote>Orang yang puitis, baik hati dan altruisik, selalu ingin membantu aksi kebaikan. Perhatian dan peka, antusias dan setia, idealis dan perfeksionis, setia kepada prinsip yang digenggam.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> :  Penulis, Sastrawan, Konselor, Psikolog, Pengajar, Seniman, Pemuka Agama</p>

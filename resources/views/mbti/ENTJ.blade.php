@@ -84,14 +84,14 @@
             </tbody>
         </table>
         <p class="text-indigo-900"><b>Penjelasan</b> : </p>
-        <div class="bg-purple-300 py-3 px-4 italic w-1/2 text-justify my-3">
+        <div class="bg-purple-300 py-3 px-4 italic text-justify my-3">
             <blockquote>Pemimpin yang pemberani, imajinatif, dan berambisi kuat. Selalu menemukan cara atau menciptakan cara melakukan sesuatu.</blockquote>
         </div>
         <p class="text-indigo-900"><b>Profesi</b> :  Pebisnis, Pengacara, Hakim, Konsultan, Pemimpin Organisasi</p>
         <p class="text-indigo-900"><b>Partner</b> : INTP atau ISTP</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Aristoteles, Harrison Ford, Franklin D. Roosevelt</p>
         <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
-        <div class="text-right text-indigo-900 mt-20">
+        <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>
             <p>NIM : 1908096002</p>
