@@ -18,9 +18,7 @@ class ReportsTable extends LivewireDatatable
             NumberColumn::name('id')->label('ID'),
             Column::name('nama')->label('Nama'),
             Column::name('result')->label('Result'),
-            Column::callback(['id'], function ($id) {
-                return view('layout.reports-actions', ['id' => $id]);
-            })->unsortable()
+            Column::name('created_at')->label('Tanggal Tes'),
         ];
     }
 }

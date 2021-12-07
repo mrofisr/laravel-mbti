@@ -35,9 +35,9 @@
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#">Beranda</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#panduan">Panduan</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#mbti">Apa itu MBTI</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#panduan">Panduan</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#about">Tentang Kita</a>
                 @if (Auth::check())
@@ -75,8 +75,11 @@
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-wrap -m-4">
-                        <p class="text-2xl font-semibold">MBTI adalah tes kepribadian dengan serangkaian pertanyaan tentang preferensi seseorang pada empat domain yang berbeda.</p>
-                        <p class="italic mt-2">sumber : <a href="https://akupintar.id/info-pintar/-/blogs/tes-mbti-16-tipe-kepribadian-klasifikasi-dan-penjelasannya" target="_blank" rel="noopener noreferrer">https://akupintar.id/</a></p>
+                        <p class="text-2xl font-semibold">MBTI adalah tes kepribadian dengan serangkaian pertanyaan
+                            tentang preferensi seseorang pada empat domain yang berbeda.</p>
+                        <p class="italic mt-2">sumber : <a
+                                href="https://akupintar.id/info-pintar/-/blogs/tes-mbti-16-tipe-kepribadian-klasifikasi-dan-penjelasannya"
+                                target="_blank" rel="noopener noreferrer">https://akupintar.id/</a></p>
                     </div>
                 </div>
             </section>
@@ -122,9 +125,9 @@
                             <div
                                 class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 border-2 border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full dark:border-indigo-400"
                                         alt="Testimonial avatar"
-                                        src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+                                        src="images/man.png">
                                 </div>
 
                                 <h2
@@ -140,9 +143,9 @@
                             <div
                                 class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 border-2 border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full dark:border-indigo-400"
                                         alt="Testimonial avatar"
-                                        src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+                                        src="images/moslem-woman.png">
                                 </div>
 
                                 <h2
@@ -151,7 +154,7 @@
 
                                 <div class="flex justify-end mt-4">
                                     <p href="#" class="text-xl font-medium text-indigo-500 dark:text-indigo-300">
-                                        Khusarah P</p>
+                                        Khusarah Prasetyani</p>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +162,9 @@
                             <div
                                 class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 border-2 border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 border-2 bg-white border-indigo-500 rounded-full dark:border-indigo-400"
                                         alt="Testimonial avatar"
-                                        src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+                                        src="images/moslem-woman (1).png">
                                 </div>
 
                                 <h2
