@@ -10,9 +10,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
-[x-cloak] {
-  display: none;
-}
+
 *,
 ::before,
 ::after {

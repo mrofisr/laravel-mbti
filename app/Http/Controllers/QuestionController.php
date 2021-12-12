@@ -36,6 +36,7 @@ class QuestionController extends Controller
     public function calculate(Request $request)
     {
         $array = array_count_values($request->all());
+        // dd($request->all());
         $P = $array['P'] / 15 * 100;
         $I = $array['I'] / 15 * 100;
         $J = $array['J'] / 15 * 100;
