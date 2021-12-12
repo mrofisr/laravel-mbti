@@ -1,6 +1,6 @@
 name: Laravel Testing (PHP)
 
-on: [pull_request, push]
+on: [pull_request]
 
 jobs:
   tests:
