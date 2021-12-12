@@ -16,10 +16,16 @@ jobs:
           - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - name: Setup Database 
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -e 'CREATE DATABASE mbti;' -uroot -p123456
+          mysql -e 'SHOW DATABASES;' -uroot -p123456
+          mysql -uroot -p123456 mbti < mbti.sql
 
       - name: Cache composer dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: vendor
           key: composer-${{ hashFiles('composer.lock') }}
@@ -39,7 +45,7 @@ jobs:
           php artisan migrate
 
       - name: Cache yarn dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: node_modules
           key: yarn-${{ hashFiles('yarn.lock') }}
@@ -47,8 +53,13 @@ jobs:
       - name: Run yarn
         run: yarn && yarn dev
 
-      - name: Run tests
+      - name: Run PHPUnit tests
         run: ./vendor/bin/phpunit
+        env:
+          APP_ENV: testing
+
+      - name: Run test cases
+        run: ./vendor/bin/codecept run acceptance --steps
         env:
           APP_ENV: testing
 
