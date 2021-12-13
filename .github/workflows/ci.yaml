@@ -10,8 +10,11 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ROOT_PASSWORD: 123456
           MYSQL_DATABASE: mbti
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_USER: admin
+          MYSQL_PASSWORD: rootpass
+          MYSQL_ROOT_PASSWORD: rootpass
         ports:
           - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -20,9 +23,9 @@ jobs:
       - name: Setup Database 
         run: |
           sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE mbti;' -uroot -p123456
-          mysql -e 'SHOW DATABASES;' -uroot -p123456
-          mysql -uroot -p123456 mbti < mbti.sql
+          mysql -e 'CREATE DATABASE mbti;' -uroot -prootpass
+          mysql -e 'SHOW DATABASES;' -uroot -prootpass
+          mysql -uroot -prootpass mbti < mbti.sql
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
