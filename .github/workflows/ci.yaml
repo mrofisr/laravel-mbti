@@ -23,9 +23,9 @@ jobs:
       - name: Setup Database 
         run: |
           sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE mbti;' -uroot -prootpass
-          mysql -e 'SHOW DATABASES;' -uroot -prootpass
-          mysql -uroot -prootpass mbti < mbti.sql
+          mysql -e 'CREATE DATABASE mbti;' -uadmin -prootpass
+          mysql -e 'SHOW DATABASES;' -uadmin -prootpass
+          mysql -uadmin -prootpass mbti < mbti.sql
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
