@@ -27,13 +27,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup MySQL Client
+        run: |
+          mysql --version
+          sudo apt-get install -y mysql-client
+
       - name: Setup Database
         run: mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass mbti < mbti.sql
 
       - name: Verify MySQL connection
         run: |
-          mysql --version
-          sudo apt-get install -y mysql-client
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW DATABASES"
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "USE DATABASE mbti"
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW TABLES"
