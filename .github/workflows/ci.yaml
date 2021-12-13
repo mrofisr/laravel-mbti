@@ -13,19 +13,21 @@ jobs:
           MYSQL_DATABASE: mbti
           MYSQL_HOST: 127.0.0.1
           MYSQL_USER: admin
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_PASSWORD: rootpass
           MYSQL_ROOT_PASSWORD: rootpass
         ports:
           - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Database 
+
+      - name: Verify MySQL connection
         run: |
-          sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE mbti;' -uadmin -prootpass
-          mysql -e 'SHOW DATABASES;' -uadmin -prootpass
-          mysql -uadmin -prootpass mbti < mbti.sql
+          mysql --version
+          sudo apt-get install -y mysql-client
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW DATABASES"
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
@@ -34,13 +36,13 @@ jobs:
           key: composer-${{ hashFiles('composer.lock') }}
 
       - name: Run composer install
-        run: composer install -n --prefer-dist
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
         env:
           APP_ENV: testing
 
       - name: Prepare Laravel Application
         run: |
-          cp .env.ci .env
+          php -r "file_exists('.env') || copy('.env.ci', '.env');"
           php artisan key:generate
 
       - name: Migrate PHP
