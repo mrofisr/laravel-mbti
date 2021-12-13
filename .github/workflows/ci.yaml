@@ -41,6 +41,11 @@ jobs:
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass mbti < mbti.sql
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SELECT * FROM mbti.users"
 
+      - name: Prepare Laravel Application
+        run: |
+          php -r "file_exists('.env') || copy('.env.ci', '.env');"
+          php artisan key:generate
+
       - name: Cache composer dependencies
         uses: actions/cache@v2
         with:
@@ -61,16 +66,11 @@ jobs:
       - name: Run yarn
         run: yarn && yarn dev
 
-      - name: Prepare Laravel Application
-        run: |
-          php -r "file_exists('.env') || copy('.env.ci', '.env');"
-          php artisan key:generate
-
       - name: Run PHPUnit tests
         env:
           MYSQL_DATABASE: mbti
           APP_ENV: testing
-          DB_USERNAME: admin
+          DB_USERNAME: root
           DB_PASSWORD: rootpass
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
         run: ./vendor/bin/phpunit
@@ -79,7 +79,7 @@ jobs:
         env:
           MYSQL_DATABASE: mbti
           APP_ENV: testing
-          DB_USERNAME: admin
+          DB_USERNAME: root
           DB_PASSWORD: rootpass
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
         run: ./vendor/bin/codecept run acceptance --steps
