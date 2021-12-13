@@ -1,6 +1,8 @@
 name: Laravel Testing (PHP)
 
-on: [pull_request]
+on:
+  pull_request:
+    branches: [testing]
 
 jobs:
   tests:
@@ -28,6 +30,9 @@ jobs:
           mysql --version
           sudo apt-get install -y mysql-client
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW DATABASES"
+
+      - name: Setup Database
+        run: mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass mbti < mbti.sql
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
