@@ -46,16 +46,7 @@ jobs:
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
         env:
           APP_ENV: testing
-
-      - name: Prepare Laravel Application
-        run: |
-          php -r "file_exists('.env') || copy('.env.ci', '.env');"
-          php artisan key:generate
-
-      - name: Migrate PHP
-        run: |
-          php artisan migrate
-
+      
       - name: Cache yarn dependencies
         uses: actions/cache@v2
         with:
@@ -64,6 +55,11 @@ jobs:
 
       - name: Run yarn
         run: yarn && yarn dev
+
+      - name: Prepare Laravel Application
+        run: |
+          php -r "file_exists('.env') || copy('.env.ci', '.env');"
+          php artisan key:generate
 
       - name: Run PHPUnit tests
         run: ./vendor/bin/phpunit
