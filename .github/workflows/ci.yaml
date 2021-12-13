@@ -39,10 +39,7 @@ jobs:
       - name: Setup Database
         run: |
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass mbti < mbti.sql
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "USE mbti"
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SHOW TABLES"
-
-
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SELECT * FROM mbti.users"
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
@@ -86,10 +83,3 @@ jobs:
           DB_PASSWORD: rootpass
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
         run: ./vendor/bin/codecept run acceptance --steps
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@master
-        if: failure()
-        with:
-          name: Logs
-          path: ./storage/logs
