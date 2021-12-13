@@ -69,14 +69,14 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
-      - name: Run PHPUnit tests
-        env:
-          DB_DATABASE: mbti
-          DB_USERNAME: root
-          DB_PASSWORD: rootpass
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
-          APP_ENV: testing
-        run: ./vendor/bin/phpunit
+      # - name: Run PHPUnit tests
+      #   env:
+      #     DB_DATABASE: mbti
+      #     DB_USERNAME: root
+      #     DB_PASSWORD: rootpass
+      #     DB_PORT: ${{ job.services.mysql.ports[3306] }}
+      #     APP_ENV: testing
+      #   run: ./vendor/bin/phpunit
 
       - name: Run test cases
         env:
