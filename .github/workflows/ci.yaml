@@ -1,4 +1,4 @@
-name: Laravel Testing (PHP)
+name: CI - Laravel Testing (PHP)
 
 on:
   push:
@@ -71,18 +71,18 @@ jobs:
 
       - name: Run PHPUnit tests
         env:
-          MYSQL_DATABASE: mbti
-          APP_ENV: testing
+          DB_DATABASE: mbti
           DB_USERNAME: root
           DB_PASSWORD: rootpass
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          APP_ENV: testing
         run: ./vendor/bin/phpunit
 
       - name: Run test cases
         env:
-          MYSQL_DATABASE: mbti
-          APP_ENV: testing
+          DB_DATABASE: mbti
           DB_USERNAME: root
           DB_PASSWORD: rootpass
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          APP_ENV: testing
         run: ./vendor/bin/codecept run acceptance --steps

@@ -1,4 +1,4 @@
-name: Deploy Application
+name: CD - Deploy Application
 on: [push]
 jobs:
 
