@@ -62,14 +62,22 @@ jobs:
           php artisan key:generate
 
       - name: Run PHPUnit tests
-        run: ./vendor/bin/phpunit
         env:
+          MYSQL_DATABASE: mbti
           APP_ENV: testing
+          DB_USERNAME: admin
+          DB_PASSWORD: rootpass
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+        run: ./vendor/bin/phpunit
 
       - name: Run test cases
-        run: ./vendor/bin/codecept run acceptance --steps
         env:
+          MYSQL_DATABASE: mbti
           APP_ENV: testing
+          DB_USERNAME: admin
+          DB_PASSWORD: rootpass
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+        run: ./vendor/bin/codecept run acceptance --steps
 
       - name: Upload artifacts
         uses: actions/upload-artifact@master
