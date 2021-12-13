@@ -35,11 +35,11 @@ jobs:
       - name: Verify MySQL connection
         run: |
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SHOW DATABASES"
-          
+
       - name: Setup Database
         run: |
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass mbti < mbti.sql
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "USE DATABASE mbti"
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "USE mbti"
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SHOW TABLES"
 
 
