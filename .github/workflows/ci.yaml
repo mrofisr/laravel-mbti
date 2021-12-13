@@ -33,13 +33,13 @@ jobs:
           sudo apt-get install -y mysql-client
 
       - name: Setup Database
-        run: mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass mbti < mbti.sql
+        run: mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['33306'] }} -uadmin -prootpass mbti < mbti.sql
 
       - name: Verify MySQL connection
         run: |
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW DATABASES"
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "USE DATABASE mbti"
-          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uadmin -prootpass -e "SHOW TABLES"
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['33306'] }} -uadmin -prootpass -e "SHOW DATABASES"
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['33306'] }} -uadmin -prootpass -e "USE DATABASE mbti"
+          mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['33306'] }} -uadmin -prootpass -e "SHOW TABLES"
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
@@ -72,7 +72,7 @@ jobs:
           APP_ENV: testing
           DB_USERNAME: admin
           DB_PASSWORD: rootpass
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          DB_PORT: ${{ job.services.mysql.ports[33306] }}
         run: ./vendor/bin/phpunit
 
       - name: Run test cases
@@ -81,7 +81,7 @@ jobs:
           APP_ENV: testing
           DB_USERNAME: admin
           DB_PASSWORD: rootpass
-          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          DB_PORT: ${{ job.services.mysql.ports[33306] }}
         run: ./vendor/bin/codecept run acceptance --steps
 
       - name: Upload artifacts
