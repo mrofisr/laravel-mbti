@@ -7,7 +7,7 @@ on:
     branches: [testing]
 
 jobs:
-  tests:
+  testing-steps:
     name: Run tests
     runs-on: ubuntu-latest
     services:
@@ -40,6 +40,9 @@ jobs:
         run: |
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass mbti < mbti.sql
           mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -prootpass -e "SELECT * FROM mbti.users"
+      
+      - name: Validate composer.json and composer.lock
+        run: composer validate
 
       - name: Cache composer dependencies
         uses: actions/cache@v2
@@ -69,14 +72,14 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
-      # - name: Run PHPUnit tests
-      #   env:
-      #     DB_DATABASE: mbti
-      #     DB_USERNAME: root
-      #     DB_PASSWORD: rootpass
-      #     DB_PORT: ${{ job.services.mysql.ports[3306] }}
-      #     APP_ENV: testing
-      #   run: ./vendor/bin/phpunit
+      - name: Run PHPUnit tests
+        env:
+          DB_DATABASE: mbti
+          DB_USERNAME: root
+          DB_PASSWORD: rootpass
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}
+          APP_ENV: testing
+        run: ./vendor/bin/phpunit --coverage-text
 
       - name: Run test cases
         env:
@@ -86,3 +89,10 @@ jobs:
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
           APP_ENV: testing
         run: ./vendor/bin/codecept run acceptance --steps
+
+  # build-docker-images:
+  #   name: Build Docker Images
+  #   runs-on: ubuntu-latest
+  # scanning-docker-images:
+  #   name: Scan Docker Images
+  #   runs-on: ubuntu-latest

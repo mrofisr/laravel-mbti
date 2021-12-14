@@ -1,21 +1,21 @@
-name: CD - Deploy Application
-on: [push]
-jobs:
+# name: CD - Deploy Application
+# on: [push]
+# jobs:
 
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to Server
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        port: ${{ secrets.SSH_PORT }}
-        script: |
-          cd /var/www/html/laravel-mbti
-          git pull
-          yarn
-          composer update
-          php artisan optimize:clear
+#   build:
+#     name: Build
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Deploy to Server
+#       uses: appleboy/ssh-action@master
+#       with:
+#         host: ${{ secrets.SSH_HOST }}
+#         username: ${{ secrets.SSH_USERNAME }}
+#         key: ${{ secrets.SSH_KEY }}
+#         port: ${{ secrets.SSH_PORT }}
+#         script: |
+#           cd /var/www/html/laravel-mbti
+#           git pull
+#           yarn
+#           composer update
+#           php artisan optimize:clear
