@@ -9,7 +9,7 @@ on:
 jobs:
   testing-steps:
     name: Run tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     services:
       mysql:
         image: mysql:5.7
@@ -92,7 +92,7 @@ jobs:
 
   # build-docker-images:
   #   name: Build Docker Images
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-18.04
   # scanning-docker-images:
   #   name: Scan Docker Images
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-18.04
