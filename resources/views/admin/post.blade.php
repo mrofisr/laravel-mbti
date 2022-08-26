@@ -4,7 +4,7 @@
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
     @livewireStyles
-    <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
     <style>
         [x-cloak] {
             display: none;

@@ -3,11 +3,11 @@
 
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
-    <link href="{{ asset('css/Chart.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/Chart.min.js') }}"></script>
-    <script src="{{ asset('js/charts-lines.js') }}" defer></script>
-    <script src="{{ asset('js/charts-pie.js') }}" defer></script>
-    <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/Chart.min.css') }}" rel="stylesheet">
+    <script src="{{ secure_asset('js/Chart.min.js') }}"></script>
+    <script src="{{ secure_asset('js/charts-lines.js') }}" defer></script>
+    <script src="{{ secure_asset('js/charts-pie.js') }}" defer></script>
+    <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
 </head>
 
 <body>

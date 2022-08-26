@@ -4,7 +4,7 @@
 
 <head>
     @include('layout.head', ['title' => 'Admin Login'])
-    <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -13,9 +13,9 @@
             <div class="flex flex-col overflow-y-auto md:flex-row">
                 <div class="h-32 md:h-auto md:w-1/2">
                     <img aria-hidden="true" class="object-cover w-full h-full dark:hidden"
-                        src="{{ asset('images/login-office.jpeg') }}" alt="Office" />
+                        src="{{ secure_asset('images/login-office.jpeg') }}" alt="Office" />
                     <img aria-hidden="true" class="hidden object-cover w-full h-full dark:block"
-                        src="{{ asset('images/login-office-dark.jpeg') }}" alt="Office" />
+                        src="{{ secure_asset('images/login-office-dark.jpeg') }}" alt="Office" />
                 </div>
                 <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
                     <div class="w-full">

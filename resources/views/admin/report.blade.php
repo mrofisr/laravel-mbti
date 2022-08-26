@@ -2,7 +2,7 @@
 <html :class="{ 'theme-dark': dark }" x-data="data()" ang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('layout.head', ['title' => 'Mulai Test'])
-        <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
         @livewireStyles
     </head>
 <body>

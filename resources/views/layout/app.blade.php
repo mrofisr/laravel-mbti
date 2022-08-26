@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html :class="{ 'theme-dark': dark }" x-data="data()" ang="{{ str_replace('_', '-', app()->getLocale()) }}">
 @include('head')
-<link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
 
 <body>
     <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">

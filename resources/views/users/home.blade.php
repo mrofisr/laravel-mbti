@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="hidden lg:block lg:w-1/2">
-            <img src="{{ asset('images/undraw_ideas_s70l.png') }}"
+            <img src="{{ secure_asset('images/undraw_ideas_s70l.png') }}"
                 x-transition:enter="transition duration-500 ease-in-out">
         </div>
     </div>
