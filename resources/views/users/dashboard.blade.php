@@ -21,7 +21,7 @@
                                     <div class="flex justify-center w-full h-screen items-center">
                                         <input type="text" name="nama" id="nama" placeholder="Nama Anda"
                                             class="block mb-2 p-2 rounded-md border-2 border-indigo-500 shadow-md focus:outline-none focus:border-indigo-600 text-center uppercase"
-                                            maxlength="10" required>
+                                            maxlength="100" required>
                                     </div>
                                 </div>
                                 @php
