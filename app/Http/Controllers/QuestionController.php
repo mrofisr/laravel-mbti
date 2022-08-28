@@ -54,19 +54,19 @@ class QuestionController extends Controller
             $nama = $request->nama;
             $reports = new Report();
             $reports->nama = $nama;
-            $reports->P = $P;
-            $reports->I = $I;
-            $reports->J = $J;
-            $reports->T = $T;
-            $reports->E = $E;
-            $reports->N = $N;
-            $reports->S = $S;
-            $reports->F = $F;
+            $reports->P = (int)$P;
+            $reports->I = (int)$I;
+            $reports->J = (int)$J;
+            $reports->T = (int)$T;
+            $reports->E = (int)$E;
+            $reports->N = (int)$N;
+            $reports->S = (int)$S;
+            $reports->F = (int)$F;
             $reports->result = $hasil;
             if ($reports->save()) {
                 return view('mbti.'.$hasil.'', [
-                    'nama' => (int)$nama,
-                    'hasil' => (int)$hasil,
+                    'nama' => $nama,
+                    'hasil' => $hasil,
                     'P' => (int)$P,
                     'I' => (int)$I,
                     'J' => (int)$J,
