@@ -34,47 +34,51 @@ class QuestionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function calculate(Request $request)
-    {
-        $array = array_count_values($request->all());
-        // dd($request->all());
-        $P = $array['P'] / 15 * 100;
-        $I = $array['I'] / 15 * 100;
-        $J = $array['J'] / 15 * 100;
-        $T = $array['T'] / 15 * 100;
-        $E = $array['E'] / 15 * 100;
-        $N = $array['N'] / 15 * 100;
-        $S = $array['S'] / 15 * 100;
-        $F = $array['F'] / 15 * 100;
-        $satu = $I > $E ? "I" : "E";
-        $dua = $S > $N ? "S" : "N";
-        $tiga = $T > $F ? "T" : "F";
-        $empat = $J > $P ? "J" : "P";
-        $hasil = $satu . $dua . $tiga . $empat;
-        $nama = $request->nama;
-        $reports = new Report();
-        $reports->nama = $nama;
-        $reports->P = $P;
-        $reports->I = $I;
-        $reports->J = $J;
-        $reports->T = $T;
-        $reports->E = $E;
-        $reports->N = $N;
-        $reports->S = $S;
-        $reports->F = $F;
-        $reports->result = $hasil;
-        if ($reports->save()) {
-            return view('mbti.'.$hasil.'', [
-                'nama' => $nama,
-                'hasil' => $hasil,
-                'P' => $P,
-                'I' => $I,
-                'J' => $J,
-                'T' => $T,
-                'E' => $E,
-                'N' => $N,
-                'S' => $S,
-                'F' => $F
-            ]);
+    {   
+        if ($request->method == "POST"){
+            $array = array_count_values($request->all());
+            // dd($request->all());
+            $P = $array['P'] / 15 * 100;
+            $I = $array['I'] / 15 * 100;
+            $J = $array['J'] / 15 * 100;
+            $T = $array['T'] / 15 * 100;
+            $E = $array['E'] / 15 * 100;
+            $N = $array['N'] / 15 * 100;
+            $S = $array['S'] / 15 * 100;
+            $F = $array['F'] / 15 * 100;
+            $satu = $I > $E ? "I" : "E";
+            $dua = $S > $N ? "S" : "N";
+            $tiga = $T > $F ? "T" : "F";
+            $empat = $J > $P ? "J" : "P";
+            $hasil = $satu . $dua . $tiga . $empat;
+            $nama = $request->nama;
+            $reports = new Report();
+            $reports->nama = $nama;
+            $reports->P = $P;
+            $reports->I = $I;
+            $reports->J = $J;
+            $reports->T = $T;
+            $reports->E = $E;
+            $reports->N = $N;
+            $reports->S = $S;
+            $reports->F = $F;
+            $reports->result = $hasil;
+            if ($reports->save()) {
+                return view('mbti.'.$hasil.'', [
+                    'nama' => (int)$nama,
+                    'hasil' => (int)$hasil,
+                    'P' => (int)$P,
+                    'I' => (int)$I,
+                    'J' => (int)$J,
+                    'T' => (int)$T,
+                    'E' => (int)$E,
+                    'N' => (int)$N,
+                    'S' => (int)$S,
+                    'F' => (int)$F
+                ]);
+            }
+        }else {
+            return redirect('/mulai-test-mbti');
         }
     }
 
