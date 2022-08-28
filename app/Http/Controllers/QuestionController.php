@@ -35,50 +35,46 @@ class QuestionController extends Controller
      */
     public function calculate(Request $request)
     {   
-        if ($request->method == "POST"){
-            $array = array_count_values($request->all());
-            // dd($request->all());
-            $P = $array['P'] / 15 * 100;
-            $I = $array['I'] / 15 * 100;
-            $J = $array['J'] / 15 * 100;
-            $T = $array['T'] / 15 * 100;
-            $E = $array['E'] / 15 * 100;
-            $N = $array['N'] / 15 * 100;
-            $S = $array['S'] / 15 * 100;
-            $F = $array['F'] / 15 * 100;
-            $satu = $I > $E ? "I" : "E";
-            $dua = $S > $N ? "S" : "N";
-            $tiga = $T > $F ? "T" : "F";
-            $empat = $J > $P ? "J" : "P";
-            $hasil = $satu . $dua . $tiga . $empat;
-            $nama = $request->nama;
-            $reports = new Report();
-            $reports->nama = $nama;
-            $reports->P = (int)$P;
-            $reports->I = (int)$I;
-            $reports->J = (int)$J;
-            $reports->T = (int)$T;
-            $reports->E = (int)$E;
-            $reports->N = (int)$N;
-            $reports->S = (int)$S;
-            $reports->F = (int)$F;
-            $reports->result = $hasil;
-            if ($reports->save()) {
-                return view('mbti.'.$hasil.'', [
-                    'nama' => $nama,
-                    'hasil' => $hasil,
-                    'P' => (int)$P,
-                    'I' => (int)$I,
-                    'J' => (int)$J,
-                    'T' => (int)$T,
-                    'E' => (int)$E,
-                    'N' => (int)$N,
-                    'S' => (int)$S,
-                    'F' => (int)$F
-                ]);
-            }
-        }else {
-            return redirect('/mulai-test-mbti');
+        $array = array_count_values($request->all());
+        // dd($request->all());
+        $P = $array['P'] / 15 * 100;
+        $I = $array['I'] / 15 * 100;
+        $J = $array['J'] / 15 * 100;
+        $T = $array['T'] / 15 * 100;
+        $E = $array['E'] / 15 * 100;
+        $N = $array['N'] / 15 * 100;
+        $S = $array['S'] / 15 * 100;
+        $F = $array['F'] / 15 * 100;
+        $satu = $I > $E ? "I" : "E";
+        $dua = $S > $N ? "S" : "N";
+        $tiga = $T > $F ? "T" : "F";
+        $empat = $J > $P ? "J" : "P";
+        $hasil = $satu . $dua . $tiga . $empat;
+        $nama = $request->nama;
+        $reports = new Report();
+        $reports->nama = $nama;
+        $reports->P = (int)$P;
+        $reports->I = (int)$I;
+        $reports->J = (int)$J;
+        $reports->T = (int)$T;
+        $reports->E = (int)$E;
+        $reports->N = (int)$N;
+        $reports->S = (int)$S;
+        $reports->F = (int)$F;
+        $reports->result = $hasil;
+        if ($reports->save()) {
+            return view('mbti.'.$hasil.'', [
+                'nama' => $nama,
+                'hasil' => $hasil,
+                'P' => (int)$P,
+                'I' => (int)$I,
+                'J' => (int)$J,
+                'T' => (int)$T,
+                'E' => (int)$E,
+                'N' => (int)$N,
+                'S' => (int)$S,
+                'F' => (int)$F
+            ]);
         }
     }
 
