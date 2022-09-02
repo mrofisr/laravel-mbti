@@ -3,6 +3,8 @@
     <head>
         @include('layout.head', ['title' => 'Mulai Test'])
         <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css') }}" rel="stylesheet">
         @livewireStyles
     </head>
 <body>
@@ -23,6 +25,19 @@
         </div>
     </div>
     @livewireScripts
+    <script type="text/javascript" src="{{ secure_asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
+	<!--Datatables -->
+	<script src="{{ secure_asset('https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js') }}"></script>
+	<script src="{{ secure_asset('https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js') }}"></script>
+	<script>
+		$(document).ready(function() {
+			var table = $('#example').DataTable({
+					responsive: true
+				})
+				.columns.adjust()
+				.responsive.recalc();
+		});
+	</script>
 </body>
 
 </html>
