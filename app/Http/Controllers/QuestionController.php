@@ -50,9 +50,13 @@ class QuestionController extends Controller
         $tiga = $T > $F ? "T" : "F";
         $empat = $J > $P ? "J" : "P";
         $hasil = $satu . $dua . $tiga . $empat;
-        $nama = $request->nama;
-        $reports = new Report();
+        $nama = strtoupper($request->nama);
+        $jenis_kelamin = $request->jenis_kelamin;
+        $prodi = strtoupper($request->prodi);
+        $reports = new Report();    
         $reports->nama = $nama;
+        $reports->prodi = $prodi;
+        $reports->jenis_kelamin = $jenis_kelamin;
         $reports->P = (int)$P;
         $reports->I = (int)$I;
         $reports->J = (int)$J;
@@ -66,6 +70,8 @@ class QuestionController extends Controller
             return view('mbti.'.$hasil.'', [
                 'nama' => $nama,
                 'hasil' => $hasil,
+                'jenis_kelamin' => $jenis_kelamin,
+                'prodi' => $prodi,
                 'P' => (int)$P,
                 'I' => (int)$I,
                 'J' => (int)$J,

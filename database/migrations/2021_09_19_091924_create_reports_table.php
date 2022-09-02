@@ -16,6 +16,8 @@ class CreateReportsTable extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->enum('jenis_kelamin', ['pria', 'wanita']);
+            $table->string('prodi');
             $table->integer('P');
             $table->integer('I');
             $table->integer('J');
