@@ -19,7 +19,7 @@
                     @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                     aria-haspopup="true">
                     <img class="object-cover w-8 h-8 rounded-full"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png"
+                        src="https://mbti-uinwalisongo.herokuapp.com/images/man.png"
                         alt="" aria-hidden="true" />
                 </button>
                 <template x-if="isProfileMenuOpen">
