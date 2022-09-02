@@ -17,8 +17,8 @@ class ReportsTable extends LivewireDatatable
         return [
             NumberColumn::name('id')->label('ID'),
             Column::name('nama')->label('Nama'),
-            // Column::name('prodi')->label('Prodi'),
-            // Column::name('jenis_kelamin')->label('Jenis Kelamin'),
+            Column::name('prodi')->label('Prodi'),
+            Column::name('jenis_kelamin')->label('Jenis Kelamin'),
             Column::name('result')->label('Result'),
             Column::name('created_at')->label('Tanggal Tes'),
         ];
