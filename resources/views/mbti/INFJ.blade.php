@@ -93,7 +93,7 @@
         <p class="text-indigo-900"><b>Profesi</b> :  Pengajar, Psikolog, Dokter, Konselor, Pekerja Sosial, Fotografer, Seniman</p>
         <p class="text-indigo-900"><b>Partner</b> : ESFP atau ESTP</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Plato, Nelson Mandela, George Harrison(The Beatles), Martin Luther King, Jr.</p>
-        <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
+        <p class="text-indigo-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>

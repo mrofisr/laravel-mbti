@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Validator;
 use Hash;
 use Session;
+use DB;
 use App\Models\User;
 use App\Models\Question;
 use App\Models\Report;
@@ -23,10 +24,12 @@ class AdminController extends Controller
         $userCount = User::count();
         $reportCount = Report::count();
         $questionCount = Question::count();
+        $mbti = DB::table('reports')->select('result', DB::raw('count(*) as total'))->groupBy('result')->distinct()->get();
         return view('admin.dashboard', [
             'userCount' => $userCount,
             'reportCount' => $reportCount,
-            'questionCount' => $questionCount
+            'questionCount' => $questionCount,
+            'mbti' => $mbti
         ]);
     }
     public function index()

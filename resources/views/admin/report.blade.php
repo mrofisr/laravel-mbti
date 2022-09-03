@@ -18,7 +18,7 @@
                         Hasil Test
                     </h2>
                     <div class="w-full overflow-x-auto">
-                        <livewire:reports-table searchable="nama, result" />
+                        <livewire:reports-table searchable="nama, result, jenis_kelamin, prodi" exportable/>
                     </div>
                 </div>
             </main>

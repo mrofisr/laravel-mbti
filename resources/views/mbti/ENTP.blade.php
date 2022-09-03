@@ -92,7 +92,7 @@
         <p class="text-indigo-900"><b>Profesi</b> :  Pengacara, Psikolog, Konsultan, Ilmuwan, Aktor, Marketing</p>
         <p class="text-indigo-900"><b>Partner</b> : INFJ atau INTJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Thomas Edison, Walt Disney, Alexander the Great</p>
-        <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
+        <p class="text-indigo-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>

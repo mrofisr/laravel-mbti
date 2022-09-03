@@ -92,7 +92,7 @@
         <p class="text-indigo-900"><b>Profesi</b> : Marketing, Sales, Polisi, Pebisnis, Pialang Saham</p>
         <p class="text-indigo-900"><b>Partner</b> : ISFJ atau ISTJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Madonna, Donald Trump, Lucille Ball</p>
-        <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-2/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
+        <p class="text-indigo-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>

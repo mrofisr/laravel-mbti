@@ -77,9 +77,7 @@
                     <div class="flex flex-wrap -m-4">
                         <p class="text-2xl font-semibold">MBTI adalah tes kepribadian dengan serangkaian pertanyaan
                             tentang preferensi seseorang pada empat domain yang berbeda.</p>
-                        <p class="italic mt-2">sumber : <a
-                                href="https://akupintar.id/info-pintar/-/blogs/tes-mbti-16-tipe-kepribadian-klasifikasi-dan-penjelasannya"
-                                target="_blank" rel="noopener noreferrer">https://akupintar.id/</a></p>
+                        <p class="italic mt-2">sumber : Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
                     </div>
                 </div>
             </section>

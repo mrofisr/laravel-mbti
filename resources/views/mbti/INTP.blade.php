@@ -92,7 +92,7 @@
         <p class="text-indigo-900"><b>Profesi</b> :  Penulis Buku Teknis, Ahli Forensik, Jaksa, Pengacara, Teknisi</p>
         <p class="text-indigo-900"><b>Partner</b> : ENTJ atau ESTJ</p>
         <p class="text-indigo-900"><b>Tokoh Terkenal</b> : Albert Einstein, Charles Darwin, Socrates, J.K. Rowling, C.G. Jung, Sir Isaac Newton</p>
-        <p class="text-indigo-900"><b>Sumber : </b><a class="italic" href="https://campuspedia.id/news/mengenal-16-tipe-kepribadian-mbti-lebih-dalam-part-1/" target="_blank" rel="noopener noreferrer">campuspedia.id</a></p>
+        <p class="text-indigo-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-indigo-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Muhammad Abdur Rofi</p>

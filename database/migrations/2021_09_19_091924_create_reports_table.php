@@ -27,6 +27,8 @@ class CreateReportsTable extends Migration
             $table->integer('S');
             $table->integer('F');
             $table->char('result', 10);
+            $table->char('keterangan', 255);
+            $table->string('penjelasan');
             $table->timestamps();
         });
     }
