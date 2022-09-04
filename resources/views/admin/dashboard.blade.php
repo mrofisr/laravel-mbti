@@ -109,7 +109,22 @@
                             const configPie = {
                               type: "pie",
                               data: dataPie,
-                              options: {},
+                              options: {
+                                tooltips: {
+                                    enabled: false
+                                },
+                                plugins: {
+                                    datalabels: {
+                                    formatter: (value, ctx) => {
+                                        const datapoints = ctx.chart.dataPie.datasets[0].data
+                                        const total = datapoints.reduce((total, datapoint) => total + datapoint, 0)
+                                        const percentage = value / total * 100
+                                        return percentage.toFixed(2) + "%";
+                                    },
+                                    color: '#fff',
+                                    }
+                                }
+                              },
                             };
                           
                             var chartBar = new Chart(document.getElementById("chartPie"), configPie);
