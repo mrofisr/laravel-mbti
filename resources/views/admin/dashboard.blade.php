@@ -83,7 +83,7 @@
                           <script>
                             var mbtis = {!! $mbti !!}
                             console.log(mbtis);
-                            const dataPie = {
+                            const data = {
                               labels: mbtis.map((mbti) => mbti.result),
                               datasets: [
                                 {
@@ -105,28 +105,33 @@
                                 },
                               ],
                             };
-                          
+                            var options = {
+                            tooltips: {
+                                enabled: false
+                            },
+                            plugins: {
+                                datalabels: {
+                                formatter: (value, ctx) => {
+                                    let datasets = ctx.chart.data.datasets;
+                                    if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                                    let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                                    let percentage = Math.round((value / sum) * 100) + '%';
+                                    return percentage;
+                                    } else {
+                                    return percentage;
+                                    }
+                                },
+                                color: '#fff',
+                                }
+                            }
+                            };
                             const configPie = {
                               type: "pie",
-                              data: dataPie,
-                              options: {
-                                tooltips: {
-                                    enabled: false
-                                },
-                                plugins: {
-                                    datalabels: {
-                                    formatter: (value, ctx) => {
-                                        const datapoints = ctx.chart.dataPie.datasets[0].data
-                                        const total = datapoints.reduce((total, datapoint) => total + datapoint, 0)
-                                        const percentage = value / total * 100
-                                        return percentage.toFixed(2) + "%";
-                                    },
-                                    color: '#fff',
-                                    }
-                                }
+                              data: {
+                                  datasets: data
                               },
+                              options: options,
                             };
-                          
                             var chartBar = new Chart(document.getElementById("chartPie"), configPie);
                           </script>
                 </div>
