@@ -121,7 +121,7 @@
                                     return percentage;
                                     }
                                 },
-                                color: '#fff',
+                                color: '#1f1f1f',
                                 }
                             }
                             };
