@@ -33,15 +33,15 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="flex flex-col justify-center w-full h-screen items-center">
-                                        <h1 class="mb-5 text-3xl font-medium text-gray-900 dark:text-white">Jenis Kelamin</h1>
+                                        <h1 class="mb-5 text-3xl font-medium text-gray-900">Jenis Kelamin</h1>
                                         <div>
                                             <div class="flex items-center mb-4">
-                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="radio-pria" class="ml-2 text-xl font-medium text-gray-900 dark:text-gray-300">Laki-laki</label>
+                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2 ">
+                                                <label for="radio-pria" class="ml-2 text-xl font-medium text-gray-900 ">Laki-laki</label>
                                             </div>
                                             <div class="flex items-center">
-                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="radio-wanita" class="ml-2 text-xl font-medium text-gray-900 dark:text-gray-300">Perempuan</label>
+                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2 ">
+                                                <label for="radio-wanita" class="ml-2 text-xl font-medium text-gray-900 ">Perempuan</label>
                                             </div>
                                         </div>
                                     </div>

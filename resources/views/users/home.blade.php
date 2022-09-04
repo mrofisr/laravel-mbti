@@ -12,12 +12,12 @@
 </head>
 
 <body class="w-full">
-    <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="w-full text-gray-700 bg-white  ">
         <div x-data="{ open: false }"
             class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8    ">
             <div class="p-4 flex flex-row items-center justify-between">
                 <a href="#"
-                    class="text-lg font-semibold tracking-widest text-gray-900 rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">MBTI<span
+                    class="text-lg font-semibold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">MBTI<span
                         class="ml-2 text-indigo-600">Test</span></a>
                 <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -32,16 +32,16 @@
             </div>
             <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row ">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg       md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#">Beranda</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg       md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#mbti">Apa itu MBTI</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg       md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#panduan">Panduan</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg       md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#about">Tentang Kita</a>
                 @if (Auth::check())
-                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg       md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="/admin/logout">Logout</a>
                 @endif
             </nav>
@@ -121,58 +121,57 @@
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full "
                                         alt="Testimonial avatar"
-                                        src="images/man.png">
+                                        src="https://media-exp1.licdn.com/dms/image/C5603AQFPNuZMVy0bhA/profile-displayphoto-shrink_400_400/0/1649753239693?e=1668038400&v=beta&t=G-K5yyLTI0-93irM6n5TnnJ_5wiefmlUxwmmoBQvbag">
                                 </div>
 
                                 <h2
-                                    class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">
+                                    class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Programmer</h2>
                                 <div class="flex justify-end mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 dark:text-indigo-300">Abdur
-                                        Rofi</p>
+                                    <p href="#" class="text-xl font-medium text-indigo-500 ">Abdur
+                                        Muhammad Abdur Rofi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full "
                                         alt="Testimonial avatar"
-                                        src="images/moslem-woman.png">
+                                        src="https://forlap.kemdikbud.go.id/dosen/showfoto/aW1hZ2UvanBlZw~~/OUUzNTgyQjctNTNDMS00RjZDLUI2Q0QtMENCQ0U0OUI0MDZF">
                                 </div>
 
                                 <h2
-                                    class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">
+                                    class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Sistem Analis</h2>
 
                                 <div class="flex justify-end mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 dark:text-indigo-300">
-                                        Khusarah Prasetyani</p>
+                                    <p href="#" class="text-xl font-medium text-indigo-500 ">
+                                        Mokhamad Iklil Mustofa M.Kom</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 border-2 bg-white border-indigo-500 rounded-full dark:border-indigo-400"
+                                    <img class="object-cover w-20 h-20 border-2 bg-white border-indigo-500 rounded-full "
                                         alt="Testimonial avatar"
-                                        src="images/moslem-woman (1).png">
+                                        src="https://konsultasiku.com/wp-content/uploads/2021/12/Hikmatun-Balighoh-Nur-Fitriyati-746x1024.png">
                                 </div>
 
                                 <h2
-                                    class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">
-                                    Dokumenter</h2>
+                                    class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
+                                    Ahli Pakar</h2>
 
                                 <div class="flex justify-end mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 dark:text-indigo-300">
-                                        Charissa
-                                        Tiara</p>
+                                    <p href="#" class="text-xl font-medium text-indigo-500 ">
+                                        Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
                                 </div>
                             </div>
                         </div>
