@@ -66,15 +66,15 @@
                         </div>
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
                             <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                            <canvas class="p-10" id="chartPie"></canvas>
+                            <canvas class="p-10" id="chartPieMBTI"></canvas>
                         </div>
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                            <canvas class="p-10" id="chartPie"></canvas>
+                            <div class="py-3 px-5 bg-white">Grafik Jenis Kelamin</div>
+                            <canvas class="p-10" id="chartPieJenisKelamin"></canvas>
                         </div>
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                            <canvas class="p-10" id="chartPie"></canvas>
+                            <div class="py-3 px-5 bg-white">Grafik Prodi</div>
+                            <canvas class="p-10" id="chartPieProdi"></canvas>
                         </div>
                 </div>
             </main>
@@ -82,12 +82,10 @@
     </div>
     <script>
         var mbtis = {!! $mbti !!}
-        console.log(mbtis);
-        const dataPie = {
+        const dataPieMBTI = {
           labels: mbtis.map((mbti) => mbti.result),
           datasets: [
             {
-              label: "My First Dataset",
               data: mbtis.map((mbti) => mbti.total),
               backgroundColor:[
                   "#41DC7F", 
@@ -105,13 +103,66 @@
             },
           ],
         };
-        const configPie = {
+        const dataPieJenisKelamin = {
+          labels: mbtis.map((mbti) => mbti.result),
+          datasets: [
+            {
+              data: mbtis.map((mbti) => mbti.total),
+              backgroundColor:[
+                  "#41DC7F", 
+                  "#7BCDBA",
+                  "#B47AEA", 
+                  "#fb8500", 
+                  "#219ebc", 
+                  "#03045e",
+                  "#ff006e",
+                  "#d62828",
+                  "#fcf6bd",
+                  "#06d6a0",
+                ],
+              hoverOffset: 4,
+            },
+          ],
+        };
+        const dataPieProdi = {
+          labels: mbtis.map((mbti) => mbti.result),
+          datasets: [
+            {
+              data: mbtis.map((mbti) => mbti.total),
+              backgroundColor:[
+                  "#41DC7F", 
+                  "#7BCDBA",
+                  "#B47AEA", 
+                  "#fb8500", 
+                  "#219ebc", 
+                  "#03045e",
+                  "#ff006e",
+                  "#d62828",
+                  "#fcf6bd",
+                  "#06d6a0",
+                ],
+              hoverOffset: 4,
+            },
+          ],
+        };
+        const chartPieMBTI = {
           type: "pie",
-          data: dataPie,
+          data: dataPieMBTI,
           options: {},
         };
-      
-        var chartBar = new Chart(document.getElementById("chartPie"), configPie);
+        const chartPieJenisKelamin = {
+          type: "pie",
+          data: dataPieJenisKelamin,
+          options: {},
+        };
+        const chartPieProdi = {
+          type: "pie",
+          data: dataPieProdi,
+          options: {},
+        };
+        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI"), chartPieMBTI);
+        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin"), chartPieJenisKelamin);
+        var chartPieProdi = new Chart(document.getElementById("chartPieProdi"), chartPieProdi);
       </script>
 </body>
 
