@@ -83,28 +83,23 @@
                           <script>
                             var mbtis = {!! $mbti !!}
                             console.log(mbtis);
-                            const data = {
-                              labels: mbtis.map((mbti) => mbti.result),
-                              datasets: [
-                                {
-                                  label: "My First Dataset",
-                                  data: mbtis.map((mbti) => mbti.total),
-                                  backgroundColor:[
-                                      "#41DC7F", 
-                                      "#7BCDBA",
-                                      "#B47AEA", 
-                                      "#fb8500", 
-                                      "#219ebc", 
-                                      "#03045e",
-                                      "#ff006e",
-                                      "#d62828",
-                                      "#fcf6bd",
-                                      "#06d6a0",
-                                    ],
-                                  hoverOffset: 4,
-                                },
-                              ],
-                            };
+                            var data = [{
+                                data: mbtis.map((mbti) => mbti.total),
+                                labels: mbtis.map((mbti) => mbti.result),
+                                backgroundColor: [
+                                    "#41DC7F", 
+                                    "#7BCDBA",
+                                    "#B47AEA", 
+                                    "#fb8500", 
+                                    "#219ebc", 
+                                    "#03045e",
+                                    "#ff006e",
+                                    "#d62828",
+                                    "#fcf6bd",
+                                    "#06d6a0",
+                                ],
+                                borderColor: "#fff"
+                            }];
                             var options = {
                             tooltips: {
                                 enabled: false
@@ -132,7 +127,7 @@
                               },
                               options: options,
                             };
-                            var chartBar = new Chart(document.getElementById("chartPie").getContext('2d'), configPie);
+                            var chartBar = new Chart(document.getElementById("chartPie"), configPie);
                           </script>
                 </div>
             </main>
