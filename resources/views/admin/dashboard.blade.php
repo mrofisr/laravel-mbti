@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html x-data="data()" ang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
@@ -8,8 +8,6 @@
     <script src="{{ secure_asset('js/charts-lines.js') }}" defer></script>
     <script src="{{ secure_asset('js/charts-pie.js') }}" defer></script>
     <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
-    <script type="text/javascript" src="{{ secure_asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
 </head>
 
 <body>
@@ -78,29 +76,35 @@
                             <canvas class="p-10" id="chartPie"></canvas>
                           </div>
                           
-                          {{-- <!-- Required chart.js -->
-                          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
+                          <!-- Required chart.js -->
+                          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                           
                           <!-- Chart pie -->
                           <script>
                             var mbtis = {!! $mbti !!}
-                            var data = [{
-                                data: mbtis.map((mbti) => mbti.total),
-                                labels: mbtis.map((mbti) => mbti.result),
-                                backgroundColor: [
-                                    "#41DC7F", 
-                                    "#7BCDBA",
-                                    "#B47AEA", 
-                                    "#fb8500", 
-                                    "#219ebc", 
-                                    "#03045e",
-                                    "#ff006e",
-                                    "#d62828",
-                                    "#fcf6bd",
-                                    "#06d6a0",
-                                ],
-                                borderColor: "#fff"
-                            }];
+                            console.log(mbtis);
+                            const dataPie = {
+                              labels: mbtis.map((mbti) => mbti.result),
+                              datasets: [
+                                {
+                                  label: "My First Dataset",
+                                  data: mbtis.map((mbti) => mbti.total),
+                                  backgroundColor:[
+                                      "#41DC7F", 
+                                      "#7BCDBA",
+                                      "#B47AEA", 
+                                      "#fb8500", 
+                                      "#219ebc", 
+                                      "#03045e",
+                                      "#ff006e",
+                                      "#d62828",
+                                      "#fcf6bd",
+                                      "#06d6a0",
+                                    ],
+                                  hoverOffset: 4,
+                                },
+                              ],
+                            };
                             var options = {
                             tooltips: {
                                 enabled: false
@@ -117,17 +121,16 @@
                                     return percentage;
                                     }
                                 },
-                                color: '#1f1f1f',
+                                color: '#fff',
                                 }
                             }
                             };
                             const configPie = {
                               type: "pie",
-                              data: {
-                                  datasets: data
-                              },
-                              options: options,
+                              data: dataPie,
+                              options: {},
                             };
+                          
                             var chartBar = new Chart(document.getElementById("chartPie"), configPie);
                           </script>
                 </div>
