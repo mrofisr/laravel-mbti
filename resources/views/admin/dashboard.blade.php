@@ -62,82 +62,57 @@
                                 <p class="text-lg font-semibold text-gray-700">
                                     {{$questionCount}}
                                 </p>
-                                <p>
-                                    {{-- @foreach($mbti as $value) {{$value->total}} @endforeach
-                                    @foreach($mbti as $value)
-                                        {{$value->result}},
-                                    @endforeach --}}
-                                    
-                                </p>
                             </div>
                         </div>
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
                             <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                             <canvas class="p-10" id="chartPie"></canvas>
-                          </div>
-                          
-                          <!-- Required chart.js -->
-                          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                          
-                          <!-- Chart pie -->
-                          <script>
-                            var mbtis = {!! $mbti !!}
-                            console.log(mbtis);
-                            const dataPie = {
-                              labels: mbtis.map((mbti) => mbti.result),
-                              datasets: [
-                                {
-                                  label: "My First Dataset",
-                                  data: mbtis.map((mbti) => mbti.total),
-                                  backgroundColor:[
-                                      "#41DC7F", 
-                                      "#7BCDBA",
-                                      "#B47AEA", 
-                                      "#fb8500", 
-                                      "#219ebc", 
-                                      "#03045e",
-                                      "#ff006e",
-                                      "#d62828",
-                                      "#fcf6bd",
-                                      "#06d6a0",
-                                    ],
-                                  hoverOffset: 4,
-                                },
-                              ],
-                            };
-                            var options = {
-                            tooltips: {
-                                enabled: false
-                            },
-                            plugins: {
-                                datalabels: {
-                                formatter: (value, ctx) => {
-                                    let datasets = ctx.chart.data.datasets;
-                                    if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
-                                    let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-                                    let percentage = Math.round((value / sum) * 100) + '%';
-                                    return percentage;
-                                    } else {
-                                    return percentage;
-                                    }
-                                },
-                                color: '#fff',
-                                }
-                            }
-                            };
-                            const configPie = {
-                              type: "pie",
-                              data: dataPie,
-                              options: {},
-                            };
-                          
-                            var chartBar = new Chart(document.getElementById("chartPie"), configPie);
-                          </script>
+                        </div>
+                        <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
+                            <canvas class="p-10" id="chartPie"></canvas>
+                        </div>
+                        <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
+                            <canvas class="p-10" id="chartPie"></canvas>
+                        </div>
                 </div>
             </main>
         </div>
     </div>
-
+    <script>
+        var mbtis = {!! $mbti !!}
+        console.log(mbtis);
+        const dataPie = {
+          labels: mbtis.map((mbti) => mbti.result),
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: mbtis.map((mbti) => mbti.total),
+              backgroundColor:[
+                  "#41DC7F", 
+                  "#7BCDBA",
+                  "#B47AEA", 
+                  "#fb8500", 
+                  "#219ebc", 
+                  "#03045e",
+                  "#ff006e",
+                  "#d62828",
+                  "#fcf6bd",
+                  "#06d6a0",
+                ],
+              hoverOffset: 4,
+            },
+          ],
+        };
+        const configPie = {
+          type: "pie",
+          data: dataPie,
+          options: {},
+        };
+      
+        var chartBar = new Chart(document.getElementById("chartPie"), configPie);
+      </script>
 </body>
 
 </html>

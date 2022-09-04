@@ -25,6 +25,8 @@ class AdminController extends Controller
         $reportCount = Report::count();
         $questionCount = Question::count();
         $mbti = DB::table('reports')->select('result', DB::raw('count(*) as total'))->groupBy('result')->distinct()->get();
+        $mbti = DB::table('reports')->select('result', DB::raw('count(*) as total'))->groupBy('result')->distinct()->get();
+        $mbti = DB::table('reports')->select('result', DB::raw('count(*) as total'))->groupBy('result')->distinct()->get();
         return view('admin.dashboard', [
             'userCount' => $userCount,
             'reportCount' => $reportCount,
