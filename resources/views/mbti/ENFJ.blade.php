@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Konsultan, Psikolog, Pengajar, Marketing, Entertainer, Penulis, Motivator</p>
         <p class="text-green-900"><b>Partner</b> : INFP atau ISFP</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : Abraham Lincoln, Johnny Depp, Oprah Winfrey, Barack Obama</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

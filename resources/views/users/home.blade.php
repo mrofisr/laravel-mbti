@@ -55,7 +55,7 @@
 
                 <p class="mt-2 text-sm text-gray-500 md:text-lg"><strong>MBTI
                         Test</strong> ini bertujuan untuk menemukan diri dalam 16 tipe kepribadian MBTI.
-                    Kenali lebih jauh dirimu untuk berkembang setidaknya satu persen setiap harinya!</p>
+                    Kenali lebih jauh dirimu untuk mengembangkan dirimu setiap harinya!</p>
                 <div class="flex space-x-3 justify-center lg:justify-start mt-6">
                     <a href="/mulai-test-mbti"
                         class="px-4 py-2 text-sm font-semibold text-green-400 border-2 border-green-400 rounded-lg active:bg-green-600 hover:bg-green-700 hover:text-white transform hover:scale-110 hover:border-green-50 transition duration-500">
@@ -77,7 +77,7 @@
                     <div class="flex flex-wrap -m-4">
                         <p class="text-2xl font-semibold">MBTI adalah tes kepribadian dengan serangkaian pertanyaan
                             tentang preferensi seseorang pada empat domain yang berbeda.</p>
-                        <p class="italic mt-2">sumber : Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+                        <p class="italic mt-2">Pakar ahli :Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
                     </div>
                 </div>
             </section>
@@ -132,7 +132,7 @@
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Programmer</h2>
                                 <div class="flex mt-4">
-                                    <p href="#" class="text-xl font-medium text-green-500 ">Muhammad Abdur Rofi</p>
+                                    <p href="#" class="text-xl font-medium text-green-500 ">Muhammad Abdur Rofi Maulidin</p>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@
 
                                 <h2
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
-                                    Ahli Pakar</h2>
+                                    Pakar Ahli</h2>
 
                                 <div class="flex mt-4">
                                     <p href="#" class="text-xl font-medium text-green-500 ">
@@ -179,7 +179,7 @@
             </section>
         </div>
     </div>
-    <footer class="footer bg-white relative pt-1 border-b-2 border-green-700">
+    <footer class="footer bg-white block pt-1 border-b-2 border-green-700">
         <div class="container mx-auto">
             <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
                 <div class="sm:w-2/3 text-center py-6">

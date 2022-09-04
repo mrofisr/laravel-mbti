@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Desainer, Konselor, Penjaga Toko/Perpustakaan, Dunia Perhotelan.</p>
         <p class="text-green-900"><b>Partner</b> : ESFP atau ESTP</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : Mother Teresa, Michael Caine, Louisa May Alcott</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

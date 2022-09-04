@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Pebisnis, Pengacara, Hakim, Konsultan, Pemimpin Organisasi</p>
         <p class="text-green-900"><b>Partner</b> : INTP atau ISTP</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : Aristoteles, Harrison Ford, Franklin D. Roosevelt</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

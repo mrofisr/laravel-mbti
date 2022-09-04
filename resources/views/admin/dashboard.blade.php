@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden">
                         <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                         <canvas id="chartPieMBTI"></canvas>
                     </div>
@@ -114,7 +114,7 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 legend: {
-                    position: 'bottom',
+                    position: 'right',
                     labels: {
                         boxWidth: 12
                     }

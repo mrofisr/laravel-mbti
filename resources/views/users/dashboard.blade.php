@@ -36,12 +36,12 @@
                                         <h1 class="mb-5 text-3xl font-medium text-gray-900">Jenis Kelamin</h1>
                                         <div>
                                             <div class="flex items-center mb-4">
-                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2 ">
-                                                <label for="radio-pria" class="ml-2 text-xl font-medium text-gray-900 ">Laki-laki</label>
+                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                                                <label for="radio-pria" class="ml-2 text-xl font-medium text-gray-900 ">Pria</label>
                                             </div>
                                             <div class="flex items-center">
-                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2 ">
-                                                <label for="radio-wanita" class="ml-2 text-xl font-medium text-gray-900 ">Perempuan</label>
+                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                                                <label for="radio-wanita" class="ml-2 text-xl font-medium text-gray-900 ">Wanita</label>
                                             </div>
                                         </div>
                                     </div>
@@ -59,19 +59,17 @@
                                                     </p>
                                                     <div
                                                         class="rounded-md shadow-md py-3 px-4 w-full mb-3 border-solid border-2 border-green-500 transform transition duration-500  hover:-translate-y-1">
-                                                        <input type="radio" name="{{ $question->id }}"
-                                                            id="{{ $question->type_satu }}"
-                                                            value="{{ $question->type_satu }}" required>
-                                                        <label
-                                                            for="{{ $question->type_satu }}">{{ $question->jawaban_satu }}</label>
+                                                        <label>
+                                                            <input type="radio" name="{{ $question->id }}" value="{{ $question->type_satu }}" required>
+                                                            <i>{{ $question->jawaban_satu }}</i>
+                                                        </label>
                                                     </div>
                                                     <div
                                                         class="rounded-md shadow-md py-3 px-4 w-full border-solid border-2 border-green-500 transform transition duration-500  hover:-translate-y-1">
-                                                        <input type="radio" name="{{ $question->id }}"
-                                                            id="{{ $question->type_dua }}"
-                                                            value="{{ $question->type_dua }}">
-                                                        <label
-                                                            for="{{ $question->type_dua }}">{{ $question->jawaban_dua }}</label>
+                                                        <label>
+                                                            <input type="radio" name="{{ $question->id }}" value="{{ $question->type_dua }}" required>
+                                                            <i>{{ $question->jawaban_dua }}</i>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -96,7 +94,7 @@
                 </div>
             </form>
         </div>
-        <footer class="footer bg-white fixed bottom-0 w-full">
+        <footer class="footer bg-white fixed bottom-0 w-full z-10">
             <div class="container mx-auto">
                 <div class="border-t-2 border-gray-300 flex flex-col items-center">
                     <div class="sm:w-2/3 text-center py-6">

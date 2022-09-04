@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Peneliti, Ilmuan, Insinyur, Teknisi, Hakim, Programmer</p>
         <p class="text-green-900"><b>Partner</b> : ENFP atau ENTP</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : John F. Kennedy</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

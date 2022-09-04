@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> : Marketing, Sales, Polisi, Pebisnis, Pialang Saham</p>
         <p class="text-green-900"><b>Partner</b> : ISFJ atau ISTJ</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : Madonna, Donald Trump, Lucille Ball</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

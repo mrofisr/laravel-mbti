@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Militer, Manajer, Polisi, Hakim, Pengacara, Guru, Sales, Auditor, Akuntan</p>
         <p class="text-green-900"><b>Partner</b> : ISTP atau INTP</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : George W. Bush, Alec Baldwin</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>

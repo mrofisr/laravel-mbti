@@ -92,7 +92,7 @@
         <p class="text-green-900"><b>Profesi</b> :  Pengacara, Psikolog, Konsultan, Ilmuwan, Aktor, Marketing</p>
         <p class="text-green-900"><b>Partner</b> : INFJ atau INTJ</p>
         <p class="text-green-900"><b>Tokoh Terkenal</b> : Thomas Edison, Walt Disney, Alexander the Great</p>
-        <p class="text-green-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+        <p class="text-green-900"><b>Pakar ahli : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-green-900 mt-10">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
             <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
