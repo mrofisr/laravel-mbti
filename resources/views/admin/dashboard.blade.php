@@ -148,21 +148,48 @@
         const chartPieMBTI = {
           type: "pie",
           data: dataPieMBTI,
-          options: {},
+          options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 12
+                }
+            },
+          }
         };
         const chartPieJenisKelamin = {
           type: "pie",
           data: dataPieJenisKelamin,
-          options: {},
+          options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 12
+                }
+            },
+          }
         };
         const chartPieProdi = {
           type: "pie",
           data: dataPieProdi,
-          options: {},
+          options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 12
+                }
+            },
+          }
         };
-        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI"), chartPieMBTI);
-        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin"), chartPieJenisKelamin);
-        var chartPieProdi = new Chart(document.getElementById("chartPieProdi"), chartPieProdi);
+        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI").getContext('2d'), chartPieMBTI);
+        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin").getContext('2d'), chartPieJenisKelamin);
+        var chartPieProdi = new Chart(document.getElementById("chartPieProdi").getContext('2d'), chartPieProdi);
       </script>
 </body>
 
