@@ -132,7 +132,7 @@
                               },
                               options: options,
                             };
-                            var chartBar = new Chart(document.getElementById("chartPie"), configPie);
+                            var chartBar = new Chart(document.getElementById("chartPie").getContext('2d'), configPie);
                           </script>
                 </div>
             </main>
