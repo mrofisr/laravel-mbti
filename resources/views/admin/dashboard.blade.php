@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html x-data="data()" ang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html ang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
@@ -82,7 +82,6 @@
                           <!-- Chart pie -->
                           <script>
                             var mbtis = {!! $mbti !!}
-                            console.log(mbtis);
                             var data = [{
                                 data: mbtis.map((mbti) => mbti.total),
                                 labels: mbtis.map((mbti) => mbti.result),
