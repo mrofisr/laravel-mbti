@@ -3,11 +3,10 @@
 
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
-    <link href="{{ secure_asset('css/Chart.min.css') }}" rel="stylesheet">
-    <script src="{{ secure_asset('js/Chart.min.js') }}"></script>
-    <script src="{{ secure_asset('js/charts-lines.js') }}" defer></script>
-    <script src="{{ secure_asset('js/charts-pie.js') }}" defer></script>
     <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.js" ></script>
+    <script type="text/javascript" src="{{ secure_asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
 </head>
 
 <body>
@@ -69,62 +68,92 @@
                         <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                         <canvas id="chartPieMBTI"></canvas>
                     </div>
-                    {{-- <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-2">
-                        <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-                            <div class="py-3 px-5 bg-white">Grafik Jenis Kelamin</div>
-                            <canvas id="chartPieJenisKelamin"></canvas>
-                        </div>
-                        <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-                            <div class="py-3 px-5 bg-white">Grafik Prodi</div>
-                            <canvas id="chartPieProdi"></canvas>
-                        </div>
-                    </div> --}}
                 </div>
             </main>
         </div>
     </div>
-    <script>
+    <script type="text/javascript">
         var mbtis = {!! $mbti !!}
-        const dataPie = {
-          labels: mbtis.map((mbti) => mbti.result),
-          datasets: [
-            {
-              label: "My First Dataset",
-              data: mbtis.map((mbti) => mbti.total),
-              backgroundColor:[
-                  "#41DC7F", 
-                  "#7BCDBA",
-                  "#B47AEA", 
-                  "#fb8500", 
-                  "#219ebc", 
-                  "#03045e",
-                  "#ff006e",
-                  "#d62828",
-                  "#fcf6bd",
-                  "#06d6a0",
+        var ctx = document.getElementById('chartPieMBTI');
+        var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: mbtis.map((mbti) => mbti.result),
+            datasets: [{
+                label: mbtis.map((mbti) => mbti.result),
+                data: mbtis.map((mbti) => mbti.total),
+                borderWidth: 0,
+                hoverOffset: 5,
+                backgroundColor: [
+                    "#41DC7F", 
+                    "#7BCDBA",
+                    "#B47AEA", 
+                    "#fb8500", 
+                    "#219ebc", 
+                    "#03045e",
+                    "#ff006e",
+                    "#d62828",
+                    "#fcf6bd",
+                    "#06d6a0",
+                    '#F3AC16', 
+                    '#9F9F9F', 
+                    '#FF3355', 
+                    '#55EE22', 
+                    '#354D73', 
+                    '#666633', 
+                    '#553FCF'
                 ],
-              hoverOffset: 4,
+                cutout: 0,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            
+            layout: {
+                padding: {
+                    bottom: 25
+                }
             },
-          ],
-        };
-        const configPie = {
-          type: "pie",
-          data: dataPie,
-          options: {
-                responsive: true,
-                maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    enabled: true,
+                    callbacks: {
+                        footer: (ttItem) => {
+                            let sum = 0;
+                            let dataArr = ttItem[0].dataset.data;
+                            dataArr.map(data => {
+                            sum += Number(data);
+                            });
+
+                            let percentage = (ttItem[0].parsed * 100 / sum).toFixed(2) + '%';
+                            return `Percentage of data: ${percentage}`;
+                        }
+                    }
+                },
                 legend: {
-                    position: 'right',
+                    position: 'bottom',
                     labels: {
                         boxWidth: 12
                     }
+                },
+                datalabels: {
+                    formatter: (value, dnct1) => {
+                    let sum = 0;
+                    let dataArr = dnct1.chart.data.datasets[0].data;
+                    dataArr.map(data => {
+                        sum += Number(data);
+                    });
+                    let percentage = (value * 100 / sum).toFixed(2) + '%';
+                        return percentage;
+                    },
+                    color: '#FFF',
                 }
             }
-        };
-        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI").getContext('2d'), configPie);
-        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin").getContext('2d'), configPie);
-        var chartPieProdi = new Chart(document.getElementById("chartPieProdi").getContext('2d'), configPie);
-      </script>
+        },
+        plugins: [ChartDataLabels]
+        });
+    </script> 
 </body>
 
 </html>
