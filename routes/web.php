@@ -35,20 +35,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     });
     Route::get('/login', [AdminController::class, 'index'])->name('login')->withoutMiddleware('auth');
     Route::post('/login', [AdminController::class, 'login'])->withoutMiddleware('auth');
-    Route::post('/register', [AdminController::class, 'register']);
-    Route::get('/register', function () {
-        return redirect()->route('admin.dashboard');
-    });
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
-    Route::get('/post', function () {
-        return view('admin.post');
-    })->name('post');
-    Route::get('/post/add', function () {
-        return view('admin.post');
-    })->name('post.add');
-    Route::get('/post/edit/{id}', [PostController::class, 'edit'])->name('post.edit');
-    Route::post('/post/edit/{id}', [PostController::class, 'update']);
-    Route::post('/post/add', [PostController::class, 'store']);
     Route::get('/report', function () {
         return view('admin.report');
     })->name('report');

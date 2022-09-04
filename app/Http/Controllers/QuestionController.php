@@ -95,7 +95,7 @@ class QuestionController extends Controller
                 "penjelasan" => "Orang Dengan Kepribadian ESFJ Biasanya Cenderung Berhati Lembut, Setia, Ramah, Dan Terorganisir. Ia Sangat Suka Membantu Orang Lain, Terutama Orang-Orang Di Sekitarnya. Nah, Inilah Alasan Mengapa Pribadi ESFJ Disebut Sebagai ‘Sang Pengasuh’."
             ],
             "ENFP" => [
-                "keterangan" =>" Extroverted, Intuitive, Feeling, Perceiving",
+                "keterangan" => "Extroverted, Intuitive, Feeling, Perceiving",
                 "penjelasan" => "Pada Umumnya Orang Dengan Kepribadian ENFP Dijuluki Sebagai ‘Sang Motivator’ Di Antara Tipe Kepribadian Lainnya. Ini Karena Orang Dengan Tipe Kepribadian ENFP Sangat Senang Menumpulkan Berbagai Ide Positif Untuk Membantu Orang Lain Dan Mampu Mengalirkan Energi Positif Tersebut Pada Orang-Orang Di Sekitarnya."
             ],
             "ENFJ" => [
@@ -123,7 +123,7 @@ class QuestionController extends Controller
         $dua = $S > $N ? "S" : "N";
         $tiga = $T > $F ? "T" : "F";
         $empat = $J > $P ? "J" : "P";
-        $hasil = $satu . $dua . $tiga . $empat;
+        $hasil = $satu.$dua.$tiga.$empat;
         $nama = strtoupper($request->nama);
         $jenis_kelamin = $request->jenis_kelamin;
         $prodi = strtoupper($request->prodi);

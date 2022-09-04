@@ -22,15 +22,6 @@
                        </a>
                    </li>
                </ul>
-               @if (Request::is('admin/dashboard*'))
-                   <div class="px-6 my-6">
-                       <button @click="openModal"
-                           class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                           Create account
-                           <span class="ml-2" aria-hidden="true">+</span>
-                       </button>
-                   </div>
-               @endif
            </div>
        </aside>
        <!-- Mobile sidebar -->
@@ -74,67 +65,6 @@
                            <span class="ml-4">Report</span>
                        </a>
                    </li>
-
                </ul>
-               <div class="px-6 my-6">
-                   <button
-                       class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                       Create account
-                       <span class="ml-2" aria-hidden="true">+</span>
-                   </button>
-               </div>
            </div>
        </aside>
-       <!-- Modal backdrop. This what you want to place close to the closing body tag -->
-       <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
-           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-           x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
-           x-transition:leave-end="opacity-0"
-           class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
-           <!-- Modal -->
-           <div x-show="isModalOpen" x-transition:enter="transition ease-out duration-150"
-               x-transition:enter-start="opacity-0 transform translate-y-1/2" x-transition:enter-end="opacity-100"
-               x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
-               x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
-               @keydown.escape="closeModal"
-               class="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
-               role="dialog" id="modal">
-               <!-- Modal body -->
-               @csrf
-               <form action="register" method="post">
-                   {{ csrf_field() }}
-                   <div class="mt-4 mb-6">
-                       <!-- Modal title -->
-                       <p class="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-300">
-                           Admin Register
-                       </p>
-                       <label class="block text-sm">
-                           <span class="text-gray-700 dark:text-gray-400">Name</span>
-                           <input
-                               class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                               type="text" name="name" class="form-control" placeholder="Nama Lengkap" />
-                       </label>
-                       <label class="block mt-4 text-sm">
-                           <span class="text-gray-700 dark:text-gray-400">Email</span>
-                           <input
-                               class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                               type="text" name="email" class="form-control" placeholder="Email" />
-                       </label>
-                       <label class="block mt-4 text-sm">
-                           <span class="text-gray-700 dark:text-gray-400">Password</span>
-                           <input
-                               class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                               type="password" name="password" class="form-control" placeholder="Password" />
-                       </label>
-                   </div>
-                   <footer
-                       class="flex flex-col items-center justify-end px-6 py-3 -mx-6 -mb-4 space-y-4 sm:space-y-0 sm:space-x-6 sm:flex-row bg-gray-50 dark:bg-gray-800">
-                       <button type="submit"
-                           class="w-full px-5 py-3 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg sm:w-auto sm:px-4 sm:py-2 active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                           Register
-                       </button>
-                   </footer>
-               </form>
-           </div>
-       </div>
-       <!-- End of modal backdrop -->
