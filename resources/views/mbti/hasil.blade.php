@@ -95,8 +95,8 @@
         <p class="text-indigo-900"><b>Sumber : </b>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
         <div class="text-right text-indigo-900 mt-20">
             <p class="pb-16">Semarang, {{ now()->format('d M Y') }}</p>
-            <p>Muhammad Abdur Rofi</p>
-            <p>NIM : 1908096002</p>
+            <p>Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
+            <p>SIPP : 0880 20 2 2</p>
         </div>
         <div class="flex justify-center mb-20">
             <input id="printbtn" onclick="window.print();"

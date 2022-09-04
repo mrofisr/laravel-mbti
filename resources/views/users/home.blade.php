@@ -132,8 +132,7 @@
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Programmer</h2>
                                 <div class="flex justify-end mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 ">Abdur
-                                        Muhammad Abdur Rofi</p>
+                                    <p href="#" class="text-xl font-medium text-indigo-500 ">Muhammad Abdur Rofi</p>
                                 </div>
                             </div>
                         </div>
