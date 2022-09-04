@@ -26,19 +26,19 @@
                             <label class="block text-sm">
                                 <span class="text-gray-700">Email</span>
                                 <input type="text"
-                                    class="block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input"
+                                    class="block w-full mt-1 text-sm focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input"
                                     type="text" name="email" class="form-control" placeholder="Email" />
                             </label>
                             <label class="block mt-4 text-sm">
                                 <span class="text-gray-700">Password</span>
                                 <input
-                                    class="block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input"
+                                    class="block w-full mt-1 text-sm focus:border-green-400 focus:outline-none focus:shadow-outline-green form-input"
                                     type="password" name="password" class="form-control" placeholder="Password" />
                             </label>
 
                             <!-- You should use a button here, as the anchor is only used for the example  -->
                             <button type="submit"
-                                class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-green-600 border border-transparent rounded-lg active:bg-green-600 hover:bg-green-700 focus:outline-none focus:shadow-outline-green">
                                 Log in
                             </button>
                         </form>

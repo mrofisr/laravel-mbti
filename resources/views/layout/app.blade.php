@@ -113,7 +113,7 @@
                                     <span>Shoes</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
+                                    <span class="inline-block w-3 h-3 mr-1 bg-green-600 rounded-full"></span>
                                     <span>Bags</span>
                                 </div>
                             </div>

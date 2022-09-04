@@ -20,14 +20,14 @@
                                 <div class="swiper-slide">
                                     <div class="flex justify-center w-full h-screen items-center">
                                         <input type="text" name="nama" id="nama" placeholder="Nama Anda"
-                                            class="block mb-2 p-2 rounded-md border-2 border-indigo-500 shadow-md focus:outline-none focus:border-indigo-600 text-center uppercase"
+                                            class="block mb-2 p-2 rounded-md border-2 border-green-500 shadow-md focus:outline-none focus:border-green-600 text-center uppercase"
                                             maxlength="100" required>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="flex justify-center w-full h-screen items-center">
                                         <input type="text" name="prodi" id="prodi" placeholder="Prodi Anda"
-                                            class="block mb-2 p-2 rounded-md border-2 border-indigo-500 shadow-md focus:outline-none focus:border-indigo-600 text-center uppercase"
+                                            class="block mb-2 p-2 rounded-md border-2 border-green-500 shadow-md focus:outline-none focus:border-green-600 text-center uppercase"
                                             maxlength="100" required>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@
                                                         {{ $question->id }}.{{ $question->pertanyaan }}
                                                     </p>
                                                     <div
-                                                        class="rounded-md shadow-md py-3 px-4 w-full mb-3 border-solid border-2 border-indigo-500 transform transition duration-500  hover:-translate-y-1">
+                                                        class="rounded-md shadow-md py-3 px-4 w-full mb-3 border-solid border-2 border-green-500 transform transition duration-500  hover:-translate-y-1">
                                                         <input type="radio" name="{{ $question->id }}"
                                                             id="{{ $question->type_satu }}"
                                                             value="{{ $question->type_satu }}" required>
@@ -66,7 +66,7 @@
                                                             for="{{ $question->type_satu }}">{{ $question->jawaban_satu }}</label>
                                                     </div>
                                                     <div
-                                                        class="rounded-md shadow-md py-3 px-4 w-full border-solid border-2 border-indigo-500 transform transition duration-500  hover:-translate-y-1">
+                                                        class="rounded-md shadow-md py-3 px-4 w-full border-solid border-2 border-green-500 transform transition duration-500  hover:-translate-y-1">
                                                         <input type="radio" name="{{ $question->id }}"
                                                             id="{{ $question->type_dua }}"
                                                             value="{{ $question->type_dua }}">
@@ -84,7 +84,7 @@
                                 <div class="swiper-slide">
                                     <div class="flex justify-center h-screen items-center">
                                         <input type="submit"
-                                            class="transform transition duration-500 hover:scale-105 hover:-translate-y-1 bg-indigo-600 hover:scale-11 hover:bg-indigo-800 text-white py-3 px-6 rounded-md"
+                                            class="transform transition duration-500 hover:scale-105 hover:-translate-y-1 bg-green-600 hover:scale-11 hover:bg-green-800 text-white py-3 px-6 rounded-md"
                                             value="Lihat hasil">
                                     </div>
                                 </div>
@@ -96,11 +96,11 @@
                 </div>
             </form>
         </div>
-        <footer class="footer bg-white fixed bottom-0 border-b-2 border-indigo-700 w-full">
+        <footer class="footer bg-white fixed bottom-0 border-b-2 border-green-700 w-full">
             <div class="container mx-auto">
                 <div class="border-t-2 border-gray-300 flex flex-col items-center">
                     <div class="sm:w-2/3 text-center py-6">
-                        <p class="text-sm text-indigo-700 font-bold mb-2">
+                        <p class="text-sm text-green-700 font-bold mb-2">
                             © {{ date('Y') }} by TI UIN Walisongo
                         </p>
                     </div>

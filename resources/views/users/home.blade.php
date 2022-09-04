@@ -18,7 +18,7 @@
             <div class="p-4 flex flex-row items-center justify-between">
                 <a href="#"
                     class="text-lg font-semibold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">MBTI<span
-                        class="ml-2 text-indigo-600">Test</span></a>
+                        class="ml-2 text-green-600">Test</span></a>
                 <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                         <path x-show="!open" fill-rule="evenodd"
@@ -51,14 +51,14 @@
         <div class="flex items-center text-center lg:text-left px-5 md:px-20 lg:w-1/2">
             <div>
                 <h1 class="py-5 text-5xl font-semibold text-gray-800 md:text-6xl">MBTI<span
-                        class="ml-2 text-indigo-600">Test</span></h1>
+                        class="ml-2 text-green-600">Test</span></h1>
 
                 <p class="mt-2 text-sm text-gray-500 md:text-lg"><strong>MBTI
                         Test</strong> ini bertujuan untuk menemukan diri dalam 16 tipe kepribadian MBTI.
                     Kenali lebih jauh dirimu untuk berkembang setidaknya satu persen setiap harinya!</p>
                 <div class="flex space-x-3 justify-center lg:justify-start mt-6">
                     <a href="/mulai-test-mbti"
-                        class="px-4 py-2 text-sm font-semibold text-indigo-400 border-2 border-indigo-400 rounded-lg active:bg-indigo-600 hover:bg-indigo-700 hover:text-white transform hover:scale-110 hover:border-purple-50 transition duration-500">
+                        class="px-4 py-2 text-sm font-semibold text-green-400 border-2 border-green-400 rounded-lg active:bg-green-600 hover:bg-green-700 hover:text-white transform hover:scale-110 hover:border-green-50 transition duration-500">
                         Mulai Test
                     </a>
                 </div>
@@ -90,22 +90,22 @@
                 <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-wrap -m-4">
                         <div
-                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-green-400 hover:bg-green-600 hover:text-white hover:border-green-50">
                             1. Isilah setiap pertanyaan sesuai kepribadianmu dengan jujur. Karena setiap jawaban dapat
                             diterima dan tidak ada jawaban yang salah. </div>
                         <div
-                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-green-400 hover:bg-green-600 hover:text-white hover:border-green-50">
                             2. Jawablah dengan santai karena tes kepribadian ini tidak dibatasi waktu. </div>
                         <div
-                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-green-400 hover:bg-green-600 hover:text-white hover:border-green-50">
                             3. Kerjakan tes kepribadian ini ditempat yang nyaman dan kondusif agar kamu dapat menjawab
                             setiap pertanyaan dengan fokus</div>
                         <div
-                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-green-400 hover:bg-green-600 hover:text-white hover:border-green-50">
                             4. Apabila kamu berhenti di tengah-tengah tes, maka jawaban selama proses tes akan hilang.
                         </div>
                         <div
-                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-indigo-400 hover:bg-indigo-600 hover:text-white hover:border-purple-50">
+                            class="shadow-md py-3 px-5 rounded-md mb-3 hover:shadow-xl transform transition duration-500 hover:scale-105 border-2 border-green-400 hover:bg-green-600 hover:text-white hover:border-green-50">
                             5. Setelah kamu selesai mengisi semua pertanyaan, kamu dapat mengetahui hasil tes
                             kepribadian ini .</div>
                     </div>
@@ -121,9 +121,9 @@
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-green-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full "
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-green-500 rounded-full "
                                         alt="Testimonial avatar"
                                         src="https://media-exp1.licdn.com/dms/image/C5603AQFPNuZMVy0bhA/profile-displayphoto-shrink_400_400/0/1649753239693?e=1668038400&v=beta&t=G-K5yyLTI0-93irM6n5TnnJ_5wiefmlUxwmmoBQvbag">
                                 </div>
@@ -132,15 +132,15 @@
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Programmer</h2>
                                 <div class="flex mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 ">Muhammad Abdur Rofi</p>
+                                    <p href="#" class="text-xl font-medium text-green-500 ">Muhammad Abdur Rofi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-green-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 bg-white border-2 border-indigo-500 rounded-full "
+                                    <img class="object-cover w-20 h-20 bg-white border-2 border-green-500 rounded-full "
                                         alt="Testimonial avatar"
                                         src="https://forlap.kemdikbud.go.id/dosen/showfoto/aW1hZ2UvanBlZw~~/OUUzNTgyQjctNTNDMS00RjZDLUI2Q0QtMENCQ0U0OUI0MDZF">
                                 </div>
@@ -150,16 +150,16 @@
                                     Sistem Analis</h2>
 
                                 <div class="flex mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 ">
+                                    <p href="#" class="text-xl font-medium text-green-500 ">
                                         Mokhamad Iklil Mustofa M.Kom</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-4 lg:w-1/3 hover:shadow-xl transform transition duration-500 hover:scale-105">
                             <div
-                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-indigo-400">
+                                class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg  border-2 border-green-400">
                                 <div class="flex justify-center -mt-16 md:justify-end">
-                                    <img class="object-cover w-20 h-20 border-2 bg-white border-indigo-500 rounded-full "
+                                    <img class="object-cover w-20 h-20 border-2 bg-white border-green-500 rounded-full "
                                         alt="Testimonial avatar"
                                         src="https://konsultasiku.com/wp-content/uploads/2021/12/Hikmatun-Balighoh-Nur-Fitriyati-746x1024.png">
                                 </div>
@@ -169,7 +169,7 @@
                                     Ahli Pakar</h2>
 
                                 <div class="flex mt-4">
-                                    <p href="#" class="text-xl font-medium text-indigo-500 ">
+                                    <p href="#" class="text-xl font-medium text-green-500 ">
                                         Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
                                 </div>
                             </div>
@@ -179,11 +179,11 @@
             </section>
         </div>
     </div>
-    <footer class="footer bg-white relative pt-1 border-b-2 border-indigo-700">
+    <footer class="footer bg-white relative pt-1 border-b-2 border-green-700">
         <div class="container mx-auto">
             <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
                 <div class="sm:w-2/3 text-center py-6">
-                    <p class="text-sm text-indigo-700 font-bold mb-2">
+                    <p class="text-sm text-green-700 font-bold mb-2">
                         © {{ date('Y') }} by TI UIN Walisongo
                     </p>
                 </div>

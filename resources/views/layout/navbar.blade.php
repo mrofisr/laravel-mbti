@@ -1,7 +1,7 @@
 <header class="z-10 py-4 bg-white shadow-md ">
-    <div class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600">
+    <div class="container flex items-center justify-between h-full px-6 mx-auto text-green-600">
         <!-- Mobile hamburger -->
-        <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+        <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-green"
             @click="toggleSideMenu" aria-label="Menu">
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
@@ -15,7 +15,7 @@
         </div>
         <ul class="flex items-center flex-shrink-0 space-x-6">
             <li class="relative">
-                <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
+                <button class="align-middle rounded-full focus:shadow-outline-green focus:outline-none"
                     @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                     aria-haspopup="true">
                     <img class="object-cover w-8 h-8 rounded-full"
