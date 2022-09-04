@@ -64,6 +64,8 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div>
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
                             <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                             <canvas id="chartPieMBTI"></canvas>
@@ -76,6 +78,7 @@
                             <div class="py-3 px-5 bg-white">Grafik Prodi</div>
                             <canvas id="chartPieProdi"></canvas>
                         </div>
+                    </div>
                 </div>
             </main>
         </div>
