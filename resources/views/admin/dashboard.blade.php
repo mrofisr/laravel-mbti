@@ -82,10 +82,12 @@
     </div>
     <script>
         var mbtis = {!! $mbti !!}
-        const dataPieMBTI = {
+        console.log(mbtis);
+        const dataPie = {
           labels: mbtis.map((mbti) => mbti.result),
           datasets: [
             {
+              label: "My First Dataset",
               data: mbtis.map((mbti) => mbti.total),
               backgroundColor:[
                   "#41DC7F", 
@@ -103,93 +105,23 @@
             },
           ],
         };
-        const dataPieJenisKelamin = {
-          labels: mbtis.map((mbti) => mbti.result),
-          datasets: [
-            {
-              data: mbtis.map((mbti) => mbti.total),
-              backgroundColor:[
-                  "#41DC7F", 
-                  "#7BCDBA",
-                  "#B47AEA", 
-                  "#fb8500", 
-                  "#219ebc", 
-                  "#03045e",
-                  "#ff006e",
-                  "#d62828",
-                  "#fcf6bd",
-                  "#06d6a0",
-                ],
-              hoverOffset: 4,
-            },
-          ],
-        };
-        const dataPieProdi = {
-          labels: mbtis.map((mbti) => mbti.result),
-          datasets: [
-            {
-              data: mbtis.map((mbti) => mbti.total),
-              backgroundColor:[
-                  "#41DC7F", 
-                  "#7BCDBA",
-                  "#B47AEA", 
-                  "#fb8500", 
-                  "#219ebc", 
-                  "#03045e",
-                  "#ff006e",
-                  "#d62828",
-                  "#fcf6bd",
-                  "#06d6a0",
-                ],
-              hoverOffset: 4,
-            },
-          ],
-        };
-        const chartPieMBTI = {
+        const configPie = {
           type: "pie",
-          data: dataPieMBTI,
+          data: dataPie,
           options: {
-            responsive: false,
-            maintainAspectRatio: false,
-            legend: {
-                position: 'bottom',
-                labels: {
-                    boxWidth: 12
+                responsive: false,
+                maintainAspectRatio: false,
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 12
+                    }
                 }
-            },
-          }
+            }
         };
-        const chartPieJenisKelamin = {
-          type: "pie",
-          data: dataPieJenisKelamin,
-          options: {
-            responsive: false,
-            maintainAspectRatio: false,
-            legend: {
-                position: 'bottom',
-                labels: {
-                    boxWidth: 12
-                }
-            },
-          }
-        };
-        const chartPieProdi = {
-          type: "pie",
-          data: dataPieProdi,
-          options: {
-            responsive: false,
-            maintainAspectRatio: false,
-            legend: {
-                position: 'bottom',
-                labels: {
-                    boxWidth: 12
-                }
-            },
-          }
-        };
-        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI").getContext('2d'), chartPieMBTI);
-        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin").getContext('2d'), chartPieJenisKelamin);
-        var chartPieProdi = new Chart(document.getElementById("chartPieProdi").getContext('2d'), chartPieProdi);
+        var chartPieMBTI = new Chart(document.getElementById("chartPieMBTI").getContext('2d'), configPie);
+        var chartPieJenisKelamin = new Chart(document.getElementById("chartPieJenisKelamin").getContext('2d'), configPie);
+        var chartPieProdi = new Chart(document.getElementById("chartPieProdi").getContext('2d'), configPie);
       </script>
 </body>
 
