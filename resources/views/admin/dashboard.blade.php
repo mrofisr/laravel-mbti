@@ -8,6 +8,7 @@
     <script src="{{ secure_asset('js/charts-lines.js') }}" defer></script>
     <script src="{{ secure_asset('js/charts-pie.js') }}" defer></script>
     <link href="{{ secure_asset('css/tailwind.output.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ secure_asset('https://code.jquery.com/jquery-3.4.1.min.js') }}"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
 </head>
 
