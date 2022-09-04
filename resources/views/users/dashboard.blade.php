@@ -96,7 +96,7 @@
                 </div>
             </form>
         </div>
-        <footer class="footer bg-white fixed bottom-0 border-b-2 border-green-700 w-full">
+        <footer class="footer bg-white fixed bottom-0 w-full">
             <div class="container mx-auto">
                 <div class="border-t-2 border-gray-300 flex flex-col items-center">
                     <div class="sm:w-2/3 text-center py-6">
