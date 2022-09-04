@@ -65,11 +65,11 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="shadow-lg rounded-lg bg-white overflow-hidden">
-                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                            <canvas id="chartPieMBTI"></canvas>
-                        </div>
+                    <div class="shadow-lg rounded-lg bg-white overflow-hidden">
+                        <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
+                        <canvas id="chartPieMBTI"></canvas>
+                    </div>
+                    {{-- <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-2">
                         <div class="shadow-lg rounded-lg bg-white overflow-hidden">
                             <div class="py-3 px-5 bg-white">Grafik Jenis Kelamin</div>
                             <canvas id="chartPieJenisKelamin"></canvas>
@@ -78,7 +78,7 @@
                             <div class="py-3 px-5 bg-white">Grafik Prodi</div>
                             <canvas id="chartPieProdi"></canvas>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </main>
         </div>
@@ -111,7 +111,7 @@
           type: "pie",
           data: dataPie,
           options: {
-                responsive: false,
+                responsive: true,
                 maintainAspectRatio: false,
                 legend: {
                     position: 'bottom',
