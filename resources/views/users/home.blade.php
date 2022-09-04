@@ -131,7 +131,7 @@
                                 <h2
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Programmer</h2>
-                                <div class="flex justify-end mt-4">
+                                <div class="flex mt-4">
                                     <p href="#" class="text-xl font-medium text-indigo-500 ">Muhammad Abdur Rofi</p>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Sistem Analis</h2>
 
-                                <div class="flex justify-end mt-4">
+                                <div class="flex mt-4">
                                     <p href="#" class="text-xl font-medium text-indigo-500 ">
                                         Mokhamad Iklil Mustofa M.Kom</p>
                                 </div>
@@ -168,7 +168,7 @@
                                     class="mt-2 text-2xl font-semibold text-gray-800  md:mt-0 md:text-3xl">
                                     Ahli Pakar</h2>
 
-                                <div class="flex justify-end mt-4">
+                                <div class="flex mt-4">
                                     <p href="#" class="text-xl font-medium text-indigo-500 ">
                                         Hikmatun Balighoh Nur Fitriyati., M.Psi.</p>
                                 </div>
