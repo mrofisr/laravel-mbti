@@ -34,7 +34,7 @@
         <p class="text-center text-2xl font-bold mt-5 text-green-900">HASIL TEST MBTI - MBTI UIN WALISONGO</p>
         <p class="mt-10 text-lg uppercase text-green-900">Nama : {{ $nama ?? 'NULL' }}</p>
         <p class="uppercase text-lg text-green-900">Prodi : {{ $prodi ?? 'NULL' }}</p>
-        <p class="uppercase text-lg text-green-900">Jenis Kelamin : {{ $jenis_kelamin ?? 'NULL' }}</p>
+        <p class="uppercase text-lg text-green-900">Jenis kelamin : {{ $jenis_kelamin ?? 'NULL' }}</p>
         <p class="text-lg text-green-900">Tipe Kepribadian : {{ $hasil ?? 'ISTPE' }}</p>
         <table class="border-2 w-full mt-5 mb-5">
             <tr>
