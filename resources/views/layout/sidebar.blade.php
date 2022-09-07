@@ -53,13 +53,6 @@
                <ul>
                    <li class="relative px-6 py-3">
                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                           href="/admin/questions">
-                           <i class="material-icons">question_answer</i>
-                           <span class="ml-4">Questions</span>
-                       </a>
-                   </li>
-                   <li class="relative px-6 py-3">
-                       <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                            href="/admin/report">
                            <i class="material-icons">content_paste</i>
                            <span class="ml-4">Report</span>

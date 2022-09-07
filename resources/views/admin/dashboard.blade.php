@@ -66,7 +66,7 @@
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden">
                         <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                        <canvas id="chartPieMBTI"></canvas>
+                        <canva class="p-10" id="chartPieMBTI"></canvas>
                     </div>
                 </div>
             </main>
@@ -109,7 +109,6 @@
         options: {
             responsive: true,
             maintainAspectRatio: true,
-            
             layout: {
                 padding: {
                     bottom: 25
