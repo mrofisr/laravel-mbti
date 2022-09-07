@@ -68,6 +68,14 @@
                         <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                         <canvas class="p-10" id="chartPieMBTI"></canvas>
                     </div>
+                    <div class="rounded-lg bg-white overflow-hidden p-4 mx-auto">
+                        <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
+                        <canvas class="p-10" id="chartPieMBTI"></canvas>
+                    </div>
+                    <div class="rounded-lg bg-white overflow-hidden p-4 mx-auto">
+                        <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
+                        <canvas class="p-10" id="chartPieMBTI"></canvas>
+                    </div>
                 </div>
             </main>
         </div>
