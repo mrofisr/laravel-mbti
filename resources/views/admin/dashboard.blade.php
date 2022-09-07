@@ -66,7 +66,7 @@
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden">
                         <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
-                        <canva class="p-10" id="chartPieMBTI"></canvas>
+                        <canvas class="p-10" id="chartPieMBTI"></canvas>
                     </div>
                 </div>
             </main>
