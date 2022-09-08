@@ -66,7 +66,6 @@
                     </div>
                     <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-2">
                         <div class="flex items-center p-4 bg-white rounded-lg shadow-xs ">
-                            <div class="py-3 px-5 bg-white">Grafik Tipe Kepribadian</div>
                             <canvas class="p-10" id="chartPieMBTI"></canvas>
                         </div>
                     </div>
