@@ -18,8 +18,8 @@ class ReportsTable extends LivewireDatatable
     public function columns()
     {
         return [
-            // NumberColumn::name('id')->label('ID')->defaultSort('asc')
-            // ->sortBy('id'),
+            NumberColumn::name('id')->label('ID')->defaultSort('asc')
+            ->sortBy('id'),
             Column::name('nama')->label('Nama'),
             Column::name('prodi')->label('Prodi'),
             Column::name('jenis_kelamin')->label('Jenis Kelamin'),
