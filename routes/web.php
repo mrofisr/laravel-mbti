@@ -28,7 +28,7 @@ Route::prefix('')->group(function () {
     });
     Route::post('/hasil', [QuestionController::class, 'calculate']);
     Route::get('/hasil', function(){
-        redirect('/mulai-test-mbti');
+        return redirect('/mulai-test-mbti');
     });
 });
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
