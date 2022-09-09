@@ -37,7 +37,7 @@
                     <p class="carousel--title carousel--title--sub">Take a few minutes to compare your adoption of CIS
                         Critical Security Controls 1 – 5 with similar sized organizations surveyed by Dimensional
                         Research.</p>
-                    <span class="carousel--radios"><button class="btn btn-primary nav--buttons--right mt">Start</button>
+                    <span class="carousel--radios"><div class="btn btn-primary nav--buttons--right mt">Start</div>
                     </span>
                 </div>
                 <div class="carousel--item" style="width: 5.55556%;">
