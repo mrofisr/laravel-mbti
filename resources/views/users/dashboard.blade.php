@@ -94,18 +94,6 @@
                 </div>
             </form>
         </div>
-        <footer class="footer bg-white fixed bottom-0 w-full z-10">
-            <div class="container mx-auto">
-                <div class="border-t-2 border-gray-300 flex flex-col items-center">
-                    <div class="sm:w-2/3 text-center py-6">
-                        <p class="text-sm text-green-700 font-bold mb-2">
-                            © {{ date('Y') }} by TI UIN Walisongo
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
