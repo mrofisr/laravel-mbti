@@ -170,8 +170,8 @@
                     borderWidth: 0,
                     hoverOffset: 5,
                     backgroundColor: [
-                        "#41DC7F", 
-                        "#7BCDBA"
+                        "#e63946", 
+                        "#0077b6"
                     ],
                     cutout: 0,
                 }]
