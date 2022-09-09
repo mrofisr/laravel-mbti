@@ -65,11 +65,11 @@
                         </div>
                     </div>
                     <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-2">
-                        <div class="flex items-center bg-white rounded-lg shadow-xs ">
+                        <div class="bg-white rounded-lg shadow-xs ">
                             <div class="py-3 px-5 bg-white">Chart Hasil Test</div>
                             <canvas class="p-10" id="chartPieMBTI"></canvas>
                         </div>
-                        <div class="flex items-center bg-white rounded-lg shadow-xs ">
+                        <div class="bg-white rounded-lg shadow-xs ">
                             <div class="py-3 px-5 bg-white">Chart Jenis Kelamin</div>
                             <canvas class="p-10" id="chartJenisKelamin"></canvas>
                         </div>
