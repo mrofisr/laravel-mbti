@@ -87,8 +87,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <!-- <div  class=""></div>
+                            <div  class=""></div> -->
+                            <div class="inline-flex">
+                                <button id="swiper-button-next" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                                    Prev
+                                </button>
+                                <button id="swiper-button-prev" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                                    Next
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,8 +119,8 @@
         <script>
             var swiper = new Swiper('.mySwiper', {
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '#swiper-button-next',
+                    prevEl: '#swiper-button-prev',
                 },
             });
         </script>

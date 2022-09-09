@@ -20,7 +20,6 @@ use App\Models\Question;
 
 Route::prefix('')->group(function () {
     Route::get('/', function () {
-        // $responses = Http::get('https://api.quotable.io/quotes?maxLength=166');
         return view('users.home');
     });
     Route::get('/mulai-test-mbti', function () {
@@ -28,6 +27,9 @@ Route::prefix('')->group(function () {
         return view('users.dashboard',['questions' => $question]);
     });
     Route::post('/hasil', [QuestionController::class, 'calculate']);
+    Route::get('/hasil', function(){
+        return view('users.dashboard');
+    });
 });
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/', function () {
