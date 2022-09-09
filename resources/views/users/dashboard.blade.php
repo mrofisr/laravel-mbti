@@ -87,16 +87,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div  class=""></div>
-                            <div  class=""></div> -->
-                            <div class="inline-flex">
-                                <button id="swiper-button-next" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
-                                    Prev
-                                </button>
-                                <button id="swiper-button-prev" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
-                                    Next
-                                </button>
-                            </div>
+                            <div id="swiper-button-next" class=""></div>
+                            <div id="swiper-button-prev" class=""></div>
                         </div>
                     </div>
                 </div>
