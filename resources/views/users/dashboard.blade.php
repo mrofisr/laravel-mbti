@@ -3,10 +3,10 @@
 
 <head>
     @include('layout.head', ['title' => 'Mulai Test'])
-    <!--  Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
+    <link href="{{ secure_asset('css/caoursel-quiz.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('js/caoursel-quiz.js') }}" rel="stylesheet">
 
+</head>
 <body>
     <div class="flex items-center justify-center">
         <div class="container">
@@ -105,17 +105,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper('.mySwiper', {
-                navigation: {
-                    nextEl: '#swiper-button-next',
-                    prevEl: '#swiper-button-prev',
-                },
-            });
-        </script>
 </body>
 
 </html>
