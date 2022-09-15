@@ -36,11 +36,11 @@
                                         <h1 class="mb-5 text-3xl font-medium text-gray-900">Jenis Kelamin</h1>
                                         <div>
                                             <div class="flex items-center mb-4">
-                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                                                <input id="radio-pria" type="radio" value="pria" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" required>
                                                 <label for="radio-pria" class="ml-2 text-xl font-medium text-gray-900 ">Pria</label>
                                             </div>
                                             <div class="flex items-center">
-                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                                                <input id="radio-wanita" type="radio" value="wanita" name="jenis_kelamin" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" required>
                                                 <label for="radio-wanita" class="ml-2 text-xl font-medium text-gray-900 ">Wanita</label>
                                             </div>
                                         </div>
