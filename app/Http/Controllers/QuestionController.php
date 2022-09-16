@@ -125,7 +125,7 @@ class QuestionController extends Controller
         $empat = $J > $P ? "J" : "P";
         $hasil = $satu.$dua.$tiga.$empat;
         $nama = strtoupper($request->nama);
-        $jenis_kelamin = trim($request->jenis_kelamin);
+        $jenis_kelamin = strtoupper(trim($request->jenis_kelamin));
         $prodi = strtoupper($request->prodi);
         $reports = new Report();    
         $reports->nama = $nama;
