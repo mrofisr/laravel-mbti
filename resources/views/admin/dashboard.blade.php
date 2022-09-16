@@ -81,6 +81,8 @@
     <script type="text/javascript">
         var mbtis = {!! $mbti !!}
         var jenis_kelamins = {!! $jenis_kelamin !!}
+        console.log(mbtis);
+        console.log(jenis_kelamins);
         var ctxMBTI = document.getElementById('chartPieMBTI');
         var ctxJK = document.getElementById('chartJenisKelamin');
         var myChartMBTI = new Chart(ctxMBTI, {
@@ -170,8 +172,8 @@
                     borderWidth: 0,
                     hoverOffset: 5,
                     backgroundColor: [
-                        "#e63946", 
-                        "#0077b6"
+                        "#0077b6",
+                        "#e63946"
                     ],
                     cutout: 0,
                 }]
