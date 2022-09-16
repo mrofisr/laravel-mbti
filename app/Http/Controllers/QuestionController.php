@@ -125,7 +125,7 @@ class QuestionController extends Controller
         $empat = $J > $P ? "J" : "P";
         $hasil = $satu.$dua.$tiga.$empat;
         $nama = strtoupper($request->nama);
-        $jenis_kelamin = $request->jenis_kelamin;
+        $jenis_kelamin = trim($request->jenis_kelamin);
         $prodi = strtoupper($request->prodi);
         $reports = new Report();    
         $reports->nama = $nama;
@@ -139,13 +139,13 @@ class QuestionController extends Controller
         $reports->N = (int)$N;
         $reports->S = (int)$S;
         $reports->F = (int)$F;
-        $reports->result = $hasil;
+        $reports->result = str_replace(' ', '', $hasil);
         $reports->keterangan = $mbtiBigData[$hasil]['keterangan'];
         $reports->penjelasan = $mbtiBigData[$hasil]['penjelasan'];
         if ($reports->save()) {
             return view('mbti.'.$hasil.'', [
                 'nama' => $nama,
-                'hasil' => $hasil,
+                'hasil' => str_replace(' ', '', $hasil),
                 'jenis_kelamin' => $jenis_kelamin,
                 'prodi' => $prodi,
                 'P' => (int)$P,
